@@ -17,6 +17,9 @@ a:hover {
   color: rgb(248, 39, 144);
   font-weight: bold;
 }
+a:visited {
+  color: rgb(79, 206, 48);
+}
 
 footer {
   background-image: url("quentin5.jpg");
