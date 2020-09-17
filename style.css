@@ -1,18 +1,29 @@
 header h1 {
   font-family: 'Merriweather', serif;
-  font-size:1.5rem;
   font-weight: bold;
   color: yellow;
   text-shadow: 2px 2px black;
   background-color: black;
+  background-image: url("quentin5.jpg");
+  height: 80px;
+  padding: 1em;
 }
 body {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
-  h1 {
-    background-color: antiquewhite;
-    padding: 1em;
-  }
+
+a:hover {
+  color: hotpink;
+  font-weight: bold;
+}
+
+footer {
+  background-image: url("quentin5.jpg");
+  height: 30px;
+  color: white;
+  padding: 1em;
+  color: yellow;
+}
+
   
