@@ -5,6 +5,24 @@ const links = [
     }
   ]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   const dice = {
     sides: 6,
     roll() {
