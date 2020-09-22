@@ -1,9 +1,4 @@
-/*const links = [
-    {
-      label: "Week1 notes",
-      url: "https://awe19001.github.io/WDD330/"
-    }
-  ]*/
+
 
   const links = [
     { label: 'Week 1 Notes', url: 'week1/1index.html', }, // you can add other tags if you like
