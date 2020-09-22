@@ -6,9 +6,9 @@
   ]*/
 
   const links = [
-    { label: 'Week 1 Notes', url: '1index.html', }, // you can add other tags if you like
-    { label: 'Week 2 Notes', url: '2index.html', },
-    { label: 'Week 3 Notes', url: '3index.html', },
+    { label: 'Week 1 Notes', url: 'week1/1index.html', }, // you can add other tags if you like
+    { label: 'Week 2 Notes', url: 'week2/2index.html', },
+    { label: 'Week 3 Notes', url: 'week3/3index.html', },
   ];
   
   const ol = document.getElementById('assignments');      // whatever your OL tag ID is
