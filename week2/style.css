@@ -12,7 +12,9 @@ header h1 {
       font-size: 20px;
       font-family: Arial, Helvetica, sans-serif;
     }
-  
+  a{
+    color: white;
+  }
   a:hover {
     color: rgb(248, 39, 144);
     font-weight: bold;
@@ -24,6 +26,9 @@ header h1 {
     color: white;
     padding: 1em;
     color: yellow;
+  }
+  p {
+    font-size: .8rem;
   }
   
     
