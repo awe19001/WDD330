@@ -4,6 +4,9 @@
 header h1 {
     color: aliceblue;
 }
+h4{
+    color: rgb(10, 104, 33);
+}
 header {
     font-family: 'Merriweather', serif;
     font-weight: bold;
@@ -14,4 +17,7 @@ header {
     height: 140px;
     padding: 1.5em;
 
-  }
+}
+.mainsection {
+    background-color: wheat;
+}

@@ -6,68 +6,13 @@
     <meta name="description" content="Joeverlyn Awe WDD330 Portal">
     <link href="https://fonts.googleapis.com/css?family=Lato%7cQuicksand&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sumall.css">
-    <script>
-    //First: read the contents of the input, and write them to the div.
-		function getText() {
-			var input = document.getElementById("textInputhere").value;
-    		document.getElementById("output").innerHTML = input;
-}
-
-   //Second: expects a number as an argument. It should take that number and sum all the numbers up to the number provided. It should return that value. Sum all the numbers up to it and output the result to the div.
-function addNumberarg() { 
-  let num1 = parseFloat(document.getElementById("numInput1").value);
-  var Total = 0;
-  for (var i=1; i <= num1;  i++) { 
-    // a place to store the input number
-    Total += i;
-    }
-  document.getElementById("output").innerHTML = Total;
-}
-
-	//Third: sum the numbers from both inputs, write to div.
-  function sumBothNumInputs() {
-    let num1 = parseFloat(document.getElementById("numInput1").value);
-    let num2 = parseFloat(document.getElementById("numInput2").value);
-;
-    let compute = num1 + num2;
-    document.getElementById("output").innerHTML= compute;
-      
-    }
-
-    
-		//Stretch Goals
-		
-		function calculator(){
-			let operator = document.getElementById("operator").value;
-			let val1 = parseFloat(document.getElementById("numInput3").value);
-			let val2 = parseFloat(document.getElementById("numInput4").value);
-
-			const add = (val1, val2) => {return (val1 + val2);}
-			let subtract = (val1, val2) => val1 - val2;
-			let multiply = (val1, val2) => val1 * val2;
-			let divide = (val1, val2) => val1 / val2;
-
-			if (operator === "multiply"){
-			document.getElementById("output").innerHTML= multiply(val1, val2);
-			} if (operator === "divide"){
-			document.getElementById("output").innerHTML= divide(val1, val2);
-			} if (operator === "subtract"){
-			document.getElementById("output").innerHTML= subtract(val1, val2);
-			} if (operator === "add"){
-			document.getElementById("output").innerHTML= add(val1, val2);
-			} 
-		}  
-    </script>
-
-
-
-
-    <title>Team4 Activity</title>
+   
+    <title>Week 2 Team4 Activity</title>
 </head>
 <body>
   <header>
 		<h1><span id="brand">Team</span>Four</h1>
-		<h2>WDD 330 - Web Frontent Development II</h2>
+		<h2>WDD 330 - Web Frontend Development II</h2>
 		<h4>Fall 2020</h4>
   </header>
   
@@ -75,33 +20,93 @@ function addNumberarg() {
     <h3>Type some text here </h3>
     <input id="textInputhere" type="text"><br>
     <button onclick="getText()">Text Load</button><br>
+	<h4>Good job! You Type...</h4>
+	<div id="output"></div>
 
-    <h3>Adding Numbers</h3>
-    <button onClick="addNumberarg()">Add Number</button>
+	<h3>Type a number to sum up</h3>
+	<input id="numberInputhere" type="text"><br>
+    <button onClick="getNumber()">Count Down</button>
+	<h4>The answer is...</h4>
+	<div id="output2"></div>
 
-		<h3>Sum of both numbers you Input</h3>
-			<input id="numInput1" type ="number">
-			<input id="numInput2" type= "number" >
-			<button onclick="sumBothNumInputs()">Sum Them Up!</button>
+	<h3>What is the sum of two numbers?</h3>
+			<input id="numberInput1" type ="number">
+			<input id="numberInput2" type= "number" >
+			<button onclick="sumBothNumInputs()">Sum them up!</button>
+			<h4>Here is the answer...</h4>
+			<div id="output3"></div>
 
-      <h3>Strech Goal 1</h3>
+      <h3>Stretch Goal</h3>
 			<select id="operator">
 			  <option value="multiply" >Multiply</option>
 			  <option value="divide">Divide</option>
 			  <option value="subtract">Subtract</option>
 			  <option value="add">Add</option>
 			</select>
-			<input id="numInput3" type ="number">
-			<input id="numInput4" type= "number" >
-			<button onclick="calculator()">Calculate them!</button>
+			<input id="numberInput3" type ="number">
+			<input id="numberInput4" type= "number" >
+			<button onclick="calculator()">Click me to know the answer!</button>
+			<h4>Here is the answer...</h4>
+			<div id="output4"></div>
+	
 
-
-    <h3>Output Div</h3>
-    <div id="output"></div>
-
-      <p>In good program design functions should do one thing and do it well. They should be kept simple. Another good programming practice is to keep your code DRY (Don't Repeat Yourself). How did you do with your functions? Does each do one thing only? Is there any repeated code? How could you fix this? If you have repeated lines of code in your functions the most common solution is to pull those repeated lines out and create a new function with them. Do this with your code. </p>
-
-
-      </section>
+			<p>I was a little anxious, I'm the only lady in the group.
+				My groupmates, they're so good. I'm not sure if I could keep up.
+				Anyway, I tried to answer the assignments and I tried to keep it simple. 
+			 </p>
+	  </section>
+	  
+	  <script>
+		//First: read the contents of the input, and write them to the div.
+		function getText() {
+		    var input = document.getElementById("textInputhere").value;
+			document.getElementById("output").innerHTML = input;
+		}
+		
+		//Second: expects a number as an argument. It should take that number and sum all the numbers up to the number provided. It should return that value. Sum all the numbers up to it and output the result to the div.
+		function getNumber() { 
+		     let inputNumber = parseFloat(document.getElementById("numberInputhere").value);
+		     var Total = 0;
+		     for (var i=1; i <= inputNumber;  i++) { 
+		    	Total += i;
+			}
+		  document.getElementById("output2").innerHTML = Total;
+		}
+		
+		//Third: sum the numbers from both inputs, write to div.
+		  function sumBothNumInputs() {
+			let num1 = parseFloat(document.getElementById("numberInput1").value);
+			let num2 = parseFloat(document.getElementById("numberInput2").value);
+		;
+			let compute = num1 + num2;
+			document.getElementById("output3").innerHTML= compute;
+			  
+			}
+		
+			
+		//Stretch Goals				
+			function calculator(){
+					let operator = document.getElementById("operator").value;
+					let val1 = parseFloat(document.getElementById("numberInput3").value);
+					let val2 = parseFloat(document.getElementById("numberInput4").value);
+		
+					const add = (val1, val2) => {return (val1 + val2);}
+					let subtract = (val1, val2) => val1 - val2;
+					let multiply = (val1, val2) => val1 * val2;
+					let divide = (val1, val2) => val1 / val2;
+		
+					if (operator === "multiply"){
+					document.getElementById("output4").innerHTML= multiply(val1, val2);
+					} if (operator === "divide"){
+					document.getElementById("output4").innerHTML= divide(val1, val2);
+					} if (operator === "subtract"){
+					document.getElementById("output4").innerHTML= subtract(val1, val2);
+					} if (operator === "add"){
+					document.getElementById("output4").innerHTML= add(val1, val2);
+					} 
+				}  
+			</script>
+		
+		
 </body>
 </html>
