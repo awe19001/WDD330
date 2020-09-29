@@ -11,6 +11,10 @@ header h1 {
 body {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+ul li {
+    list-style-type: none;
 }
 a:hover {
   color: rgb(248, 39, 144);
