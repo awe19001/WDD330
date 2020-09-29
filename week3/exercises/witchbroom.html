@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joeverlyn Awe WDD330 Portal">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cQuicksand&amp;display=swap" rel="stylesheet">
+    <title>Document Object Model -  The Witch's broom</title>
+</head>
+
+<style>
+  body { min-height: 100px };
+</style>
+
+<img src="img/broom.png" id="broom" style="position: absolute">
+<img src="img/witch.png" id="witch" style="position: absolute">
+
+<script>
+  let broom = document.querySelector("#broom");
+  let witch = document.querySelector("#witch");
+
+  let angle = 0;
+  let lastTime = null;
+  function animate(time) {
+    if (lastTime != null) angle += (time - lastTime) * 0.001;
+    lastTime = time;
+    broom.style.top = (Math.sin(angle) * 10) + "em";
+    broom.style.right = (Math.cos(angle) * 10 + 5) + "em";
+    witch.style.right = (Math.cos(angle) * 10 + 5) + "em";
+
+    // Your extensions here.
+
+    requestAnimationFrame(animate);
+  }
+  requestAnimationFrame(animate);
+</script>
+
+
+<body>
+  
+</body>
