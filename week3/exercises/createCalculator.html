@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joeverlyn Awe WDD330 Portal">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cQuicksand&amp;display=swap" rel="stylesheet">
+    <script>
+        let calculator = {
+            sum() {
+              return this.a + this.b;
+            },
+          
+            mul() {
+              return this.a * this.b;
+            },
+          
+            read() {
+              this.a = +prompt('a?', 0);
+              this.b = +prompt('b?', 0);
+            }
+          };
+          
+          calculator.read();
+          alert( calculator.sum() );
+          alert( calculator.mul() );
+        </script>
+    <title>Create Calculator"</title>
+</head>
+
+<body>
+ 
+</body>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joeverlyn Awe WDD330 Portal">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cQuicksand&amp;display=swap" rel="stylesheet">
+    <script>
+        let ladder = {
+            step: 0,
+            up() {
+              this.step++;
+              return this;
+            },
+            down() {
+              this.step--;
+              return this;
+            },
+            showStep() {
+              alert( this.step );
+              return this;
+            }
+          }
+          
+          ladder.up().up().down().up().down().showStep(); // 1
+        </script>
+    <title>Chaining</title>
+</head>
+
+<body>
+ 
+</body>
