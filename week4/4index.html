@@ -24,27 +24,35 @@
                 <li><h5>JavaScript: Novice to Ninja, 2nd Edition (Formms)</h5>
                        <p>Forms are made up of a <em><form> </em>element that contains form controls such as input fields, select menus and buttons.</p>
                        <p>Reset buttons are generally considered poor for usability, as they are too easy to click and then wipe out all the data that’s been entered. So think very carefully before using one in a form.</p>  
-                       <p></p>  
-                       <p></p>  
-                       <p></p>  
-                       <p></p>  
-                       <p></p>     
+                       <p>The <em>focus</em> event occurs when an element is focused on. </p>  
+                       <p>The <em>blur </em>event occurs when the user moves the focus away from the form element.</p>  
+                       <p>The <em>change </em>event occurs when the user moves the focus away from the form elementafter changing it. So if a user clicks in an input field and makes no changes, and then clicks elsewhere, the change event won’t fire, but the blur event will.</p>           
                      
                        <li><a href="https://awe19001.github.io/WDD330/week4/ninja/ninja.html">Quiz Ninja Project</a> - follow the link</li>
                 </li>
 
-                <li><h5>JavaScript: Novice to Ninja, 2nd Edition ( Ch6: Document Object Model)</h5>
-                      <p>The <em>Document Object Model</em>, or DOM for short, represents an HTML document as a network of connected nodes that form a tree-like structure. </p>
-                      <p>The <em>getElementById() </em>method does exactly what it says on the tin. It returns a reference to the element with a unique id attribute that is given as an argument. Every id attribute should be unique to just one element.</p>  
-                      <p>The <em>getElementsByTagName() </em>will return a live node list of all the elements with the tag name that is provided as an argument.  </p>
-                      <p>The <em>getElementsByClassName() </em>will return a live node list of all elements that have the class name that is supplied as an argument. </p>
-                      <p>The <em>document.querySelector() </em>method allows you to use CSS notation to find the first element in the document that matches that matches a CSS selector provided as an argument. If no elements match, it will return null.</p>
-                      <p>The <em>document.querySelectorAll() </em>method also uses CSS notation but returns a node list of all the elements in the document that match the CSS query selector</p>
-                      <p>The <em>classList property</em> is a list of all the classes an element has. It has a number of methods that make it easier to modify the class of an element. </p>
-                      <p>The CSS properties of an element can be changed by accessing the style property.</p>
-                </li> 
+                <li><h5>JavaScript: Novice to Ninja, 2nd Edition (Ch12: Object Oriented Programming)</h5>
+                  <p>Object-oriented programming (OOP for short) is a style of programming that involves separating the code into objects that have properties and methods.</p>  
+                  <p> There are three main concepts in OOP: encapsulation, polymorphism and inheritance. </p>  
+                  <p><em>Encapsulation</em> involves keeping all the programming logic inside an object and making methods available to implement the functionality, without the outside world needing to know how it’s done.</p> 
+                  <p><em>Polymorphism</em> various objects can share the same method, but also have the ability to override shared methods with a more specific implementation.</p> 
+                  <p><em>Inheritance</em> means we can take an object that already exists and inherit all its properties and methods. We can then improve on its functionality by adding new properties and methods.</p> 
+                  <p><em>Class-based</em>languages, such as Java and Ruby, use a class to define a blueprint for an object.</p> 
+                  <p><em>Prototypebased</em> language d used the concept of using actual objects as the blueprint for creating more objects.</p>                              
+                  <p>An alternative way to create objects is to use a <em>constructor function</em> -  a function that defines the properties and methods of an object. The keyword <em>this</em> is used to represent the object that will be returned by the constructor function.</p>
+                  <p>A golden rule to remember is: Never use arrays or objects as a default value in prototype.</p>
+                  <p>Giving users or external services too much access to properties and methods could be a recipe for disaster! </p>
+                  <p>Properties of objects in JavaScript are said to be enumerable or non-enumerable. If they aren’t enumerable, this means they will not show up when a for-in loop is used to loop through an object’s properties and methods.</p>
+                  <p>The get() and set() methods can be used to control how a property is set using assignment and the value that is returned when a property is queried.</p>
+                  <p>A mixin is a way of adding properties and methods of some objects to another object without using inheritance. It allows more complex objects to be created by ‘mixing’ basic objects together.</p>
+                  <p>The bind() method is a method for all functions and is used to set the value of this in the function. </p>
+                  <p>You wanted a banana but what you got was a gorilla holding the banana and the entire jungle. The “Gorilla Banana” problem occurs when you need a method from an object, so you inherit from that object. The name comes from a quote by Joe Armstrong, the creator of the Erlang programming language.</p>
+                  <p></p>
 
-                
+                  <li><a href="https://awe19001.github.io/WDD330/week4/ninja/ninja.html">Quiz Ninja Project</a> - follow the link</li>
+              </li>
+
+
                 <li><h5>JavaScript: Novice to Ninja, 2nd Edition  (Ch7: Events)</h5>
                       <p> <em>Events</em> are another part of the DOM and they are what provides the link between the web page and user interactions. Every time a user interacts with a web page, such as clicking on a link, pressing </p>
                       <p>Event listeners in JavaScript work in much the same way. They are like setting a notification to alert you when something happens. </p>
@@ -57,15 +65,20 @@
                       <p>The <em>touchcancel </em>event occurs when a touch event is interrupted, such as a user’s finger moving outside the document window, or too many fingers being used at once. A pop-up dialog will also cancel a touch event. </p>
                       <p>The <em>preventDefault() </em>is a method of the event object that can be used inside the callback function to stop the default behavior happening. </p> 
               
+
+
+
                     </li> 
 
                     <div> 
                       <h3>Questions:</h3>
                       <ol>
                         <li>
-                          <p>I really don't get it. Why is my Ninja Project (chapter: 5 & 7) won't work? I've been tracing my code if where did I make a mistake. I even compared mine from the codepen it still won't work. What is happening?</p>
-                          <p>Is there any command about tap event? If there is what is the difference between the touch event and tap event?</p>
-                          <p>How many code exercises are we suppose to make for this week?</p>
+                          <p>Why did we jump on Chapter 12? After Chapter 8 it's suppose to be Chapter 9, right?</p>
+                          <p>Is there any example of forms that uses backend in this book? That uses PHP or something?</p>
+                          <p>On page 448 ES6 Class Declarations example (Novice to Ninja)  roll() {return Math.floor(this.sides * Math.random() + 1)}, why there's a '+ 1'?</p>
+
+
                         </li>
                       </ol>                                                                
             </div>
