@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='description' content='A JavaScript Quiz Game'>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="tictac.css">
+  <script src="tictac.js"></script>
+  <script>
+	const cells = document.getElementById("tic-tac-toe");
+  cells.addEventListener("click", game);
+</script>
+</head>
+
+<body>
+    <section class="mainsection">
+        <table id="tic-tac-toe">
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+		</table>
+
+		<button type="button" onclick="reset()">Replay</button>
+
+ 	  <div>
+		   <p id="winner">No Winner Yet</p>
+	  </div>
+   </section> 
+
+</body>
+</html>
