@@ -28,55 +28,55 @@
 			  break;
 			case 1:
 			  target.innerHTML = "X";
-			  target.style.color = "green";
+			  target.style.color = "blue";
 			  break;
 		  }
 		}
 		  for (i = 0; i < 3; i++) {
 						if ((document.getElementById(i).innerHTML == "X") && (document.getElementById(i + 3).innerHTML == 'X') && (document.getElementById(i + 6).innerHTML == 'X')) {
-						var winner = "X Wins";
+						var winner = "Congratulations! X Wins";
 						document.getElementById("winner").innerText = winner;
 					}
 				}
 
 		for (i = 0; i < 3; i++) {
 						if ((document.getElementById(i).innerHTML == "O") && (document.getElementById(i + 3).innerHTML == 'O') && (document.getElementById(i + 6).innerHTML == 'O')) {
-						var winner = "O Wins";
+						var winner = "Congratulations! O Wins";
 						document.getElementById("winner").innerText = winner;
 					}
 				}
 
 		for (i = 0; i < 9; i += 3) {
 						if ((document.getElementById(i).innerHTML == "X") && (document.getElementById(i + 1).innerHTML == 'X') && (document.getElementById(i + 2).innerHTML == 'X')) {
-						var winner = "X Wins";
+						var winner = "Congratulations! X Wins";
 						document.getElementById("winner").innerText = winner;
 					}
 				}
 
 		for (i = 0; i < 9; i += 3) {
 						if ((document.getElementById(i).innerHTML == "O") && (document.getElementById(i + 1).innerHTML == 'O') && (document.getElementById(i + 2).innerHTML == 'O')) {
-						var winner = "O Wins";
+						var winner = "Congratulations! O Wins";
 						document.getElementById("winner").innerText = winner;
 					}
 				}
 
 		if ((document.getElementById(0).innerHTML == "X") && (document.getElementById(4).innerHTML == 'X') && (document.getElementById(8).innerHTML == 'X')) {
-			var winner = "X Wins";
+			var winner = "Congratulations! X Wins";
 						document.getElementById("winner").innerText = winner;
 		}
 
 		if ((document.getElementById(2).innerHTML == "X") && (document.getElementById(4).innerHTML == 'X') && (document.getElementById(6).innerHTML == 'X')) {
-			var winner = "X Wins";
+			var winner = " Congratulations! X Wins";
 						document.getElementById("winner").innerText = winner;
 		}
 
 		if ((document.getElementById(0).innerHTML == "O") && (document.getElementById(4).innerHTML == 'O') && (document.getElementById(8).innerHTML == 'O')) {
-			var winner = "O Wins";
+			var winner = "Congratulations! O Wins";
 						document.getElementById("winner").innerText = winner;
 		}
 
 		if ((document.getElementById(2).innerHTML == "O") && (document.getElementById(4).innerHTML == 'O') && (document.getElementById(6).innerHTML == 'O')) {
-			var winner = "O Wins";
+			var winner = "Congratulations! O Wins";
 						document.getElementById("winner").innerText = winner;
 		}
 

@@ -1,11 +1,13 @@
+.main-tac {
+    margin-top: 70px;
+}
 td {
-    border: 4px solid purple;
-    height: 100px;
-    width: 100px;
+    border: 4px solid rgb(238, 14, 238);
+    height: 150px;
+    width: 150px;
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
-    font-family: "Comic"
 }
 
 table {
@@ -34,5 +36,14 @@ table tr td:last-child {
 
 button{
   border-radius: 5px;
-  padding: .5em;
+  padding: .3em;
+  font-family: "helvetica";
+  font-size: large;
+}
+button:hover {
+    background-color: aqua;
+}
+.win-win {
+    font-family: cursive;
+    font-size: 30px;
 }

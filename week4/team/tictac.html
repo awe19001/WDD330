@@ -6,15 +6,11 @@
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="tictac.css">
   <script src="tictac.js"></script>
-  <script>
-	const cells = document.getElementById("tic-tac-toe");
-  cells.addEventListener("click", game);
-</script>
-</head>
 
+</head>
 <body>
     <section class="mainsection">
-        <table id="tic-tac-toe">
+        <table id="tic-tac-toe" class="main-tac">
 		<tr>
 			<td class="cell" id="0"></td>
 			<td class="cell" id="1"></td>
@@ -34,10 +30,14 @@
 
 		<button type="button" onclick="reset()">Replay</button>
 
- 	  <div>
+ 	  <div class="win-win">
 		   <p id="winner">No Winner Yet</p>
 	  </div>
-   </section> 
-
+   </section>
+  
+   <script>
+	const cells = document.getElementById("tic-tac-toe");
+  cells.addEventListener("click", game);
+</script>
 </body>
 </html>
