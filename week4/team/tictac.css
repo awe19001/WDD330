@@ -42,8 +42,16 @@ button{
 }
 button:hover {
     background-color: aqua;
+    cursor: pointer;
 }
 .win-win {
     font-family: cursive;
     font-size: 30px;
+}
+.cell {
+    transition: all 0.2s ease-in-out;
+}
+.cell:hover {
+    cursor: pointer;
+    background: #91f591;
 }
