@@ -24,11 +24,11 @@
 		  switch (counter % 2) {
 			case 0:
 			  target.innerHTML = "O";
-			  target.style.color = "red";
+              target.style.color = "red";            
 			  break;
 			case 1:
 			  target.innerHTML = "X";
-			  target.style.color = "blue";
+              target.style.color = "blue";       
 			  break;
 		  }
 		}
