@@ -28,7 +28,7 @@
 			  break;
 			case 1:
 			  target.innerHTML = "X";
-              target.style.color = "blue";       
+              target.style.color = "yellow";       
 			  break;
 		  }
 		}
