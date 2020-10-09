@@ -59,6 +59,16 @@
 						document.getElementById("winner").innerText = winner;
 					}
 				}
+				var total = 0;
+      for (i = 0; i < 9; i++) {
+						if ((document.getElementById(i).innerHTML == "X") ||(document.getElementById(i).innerHTML == "O")) {
+              total++
+              if(total == 9){
+                var winner = "Its a tie!";
+						document.getElementById("winner").innerText = winner;
+              }						
+					}
+				}
 
 		if ((document.getElementById(0).innerHTML == "X") && (document.getElementById(4).innerHTML == 'X') && (document.getElementById(8).innerHTML == 'X')) {
 			var winner = "Congratulations! X Wins";
@@ -94,3 +104,4 @@
 			winner.innerText = initText;
 		  }
 		}
+
