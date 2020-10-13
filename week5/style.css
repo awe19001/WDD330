@@ -1,0 +1,65 @@
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  color: yellow;
+  text-shadow: 2px 2px black;
+  background-color: black;
+  background-image: url("quentin5.jpg");
+  height: 70px;
+  padding: 1em;
+}
+body {
+  background: rgb(80, 247, 247);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  color: rgb(248, 39, 144);
+  font-weight: bold;
+}
+
+footer {
+  background-image: url("quentin5.jpg");
+  height: 30px;
+  color: white;
+  padding: 1em;
+  color: yellow;
+  font-size: 15px;
+}
+
+/*==Web Frontend==*/
+.text {
+  margin: 0px;
+}
+.text h1 {
+  font-size: 3rem;
+  cursor: context-menu;
+}
+.text span {
+  display: inline-block;
+}
+span:hover {
+  color: rgb(241, 238, 6);
+  transition: all ease .1s;
+}
+span.name {
+  color: #ee0e51;
+}
+span {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+span.name:hover {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+span.m-left {
+  margin-left: -10px;
+}
+span.m-left:hover{
+  transform: translateX(10px);
+  transition: all ease 0.3s;
+} 
+
+  
