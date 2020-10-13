@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge One: Todo </title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="myDIV" class="header">
+                <h2>My To Do List</h2>
+                <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+              </div>
+  
+              <ul id="myUL">
+                <li>Hit the gym</li>
+                <li class="checked">Pay bills</li>
+                <li>Meet George</li>
+                <li>Buy eggs</li>
+                <li>Read a book</li>
+                <li>Organize office</li>
+              </ul>    
+              
+              <ul class="todo-list"></ul>
+              <div class="todo-filter">
+                  <span class="counter"></span>
+                  <button class="btnAll active">All</button>
+                  <button class="btnActive inActive">Active</button>
+                  <button class="btnComplete inActive">Complete</button>
+              </div>
+        </section>
+    </main>
+    <script src="js/todo.js" ></script>
+    <script src="js/addtodo.js" ></script>
+   
+</body>
+</html>
