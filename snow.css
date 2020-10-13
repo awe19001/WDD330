@@ -17,6 +17,14 @@ section {
     justify-content: center;
     padding: 50px 0;
 }
+
+section a{
+    border-radius: 30px;   
+}
+section a:hover{
+    background: linear-gradient(transparent, yellow);
+    border-radius: 30px; 
+}
 section .content {
     text-align: center;   
 }
