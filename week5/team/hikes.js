@@ -1,4 +1,3 @@
-// MOVE EVERYTHING BELOW THIS POINT and uncomment import!
 //create an array of hikes
 const hikeList = [
   {
