@@ -6,7 +6,6 @@ const btnActive = document.querySelector('.btnActive');
 const btnCompleted = document.querySelector('.btnComplete');
 
 const todoList = new LocalStorage();
-
 todoList.loadTodoList();
 
 saveTodo.addEventListener('click', () => {
