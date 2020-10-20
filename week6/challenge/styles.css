@@ -8,9 +8,8 @@
     padding: 30px 40px;
     color: white;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  
-
   .header:after {
     content: "";
     display: table;
