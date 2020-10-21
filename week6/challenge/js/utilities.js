@@ -1,23 +1,21 @@
-export default class TodoTask {
-    constructor(id, content, status) {
-        this.id = id;
-        this.content = content;
-        this.status = status;
-    }
+ /*********************
+* Utility Functions  /
+**********************/
 
-    getId() {
-        return this.id;
-    }
+export function qs(selector){
+    console.log(`QS initialized with ${selector}`);
+    const item = document.getElementById(selector);
+    return (item ? item : null);
+}
 
-    getContent() {
-        return this.content;
-    }
+export function onTouch(elementSelector, callback){
+    console.log(`onTouch initialized`);
+    const listenItem = qs(elementSelector);
 
-    getStatus() {
-        return this.status;
-    }
-
-    setStatus(status) {
-        this.status = status;
-    }
+    console.log(`listenItem is ${listenItem}`);
+    listenItem.addEventListener('touchend', function(event) {
+        event.preventDefault();
+        event.currentTarget.click();
+    }, false);
+    listenItem.addEventListener('click', () => {console.log(callback);}, false);
 }

@@ -1,142 +1,144 @@
-*, 
-*::before,
-*::after {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
     box-sizing: border-box;
+}
+html{
+    overflow-y: scroll;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0 .3em;
+    display: flex;
+    flex-direction: column;
+    background-color: #2E1760; /* midnight blue */
+}
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 500px;
+    margin: 1em auto 0 auto;
+    background-color: #7180B9; /* Glaucous */
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #DFF3E4; /* Honeydew */
+    border-bottom: none;
+    padding:.5em;
+    color: #DFF3E4; /* Honeydew */
+}
+h1 {
+    text-align: center;
+}
+ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    background-color: white;
+    border: 1px solid #2E1760; /* midnight blue */
+    border-top: none;
+    color: #2E1760; /* midnight blue */
 }
-
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.5rem;
-}
-
-section {
-    color: #222;
-    height: 90vh;
-    margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    max-width: 600px;
-    overflow-y: auto;
-    padding: 10px;
-    position: relative;
+li {
     width: 100%;
-}
-
-h1 {
-   font-size: 2rem;
-   margin-bottom: 15px;    
-   text-align: center;
-}
-
-.todo-list {
-    margin-bottom: 15px; 
-    list-style: none;
-}
-
-form {
-    bottom: 10px;
+    margin: 0;
+    padding: .5em;
+    border-top: 1px solid #2E1760; /* midnight blue */
     display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     justify-content: space-between;
-    position: absolute;
-    width: 97%;
 }
-
-input[type="text"] {
-    border: 2px solid #222;
-    border-radius: 10px;
-    padding: 15px;
-    width: 85%;
-    font-size: 1.2rem;
+li:hover {
+    background-color: #DFF3E4; /* Honeydew */
 }
-
-.btnAddTodo {
-    background-color: transparent;
-    border: 2px solid #222;
-    border-radius: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    width: 13%;
+label {
+    width: 100%;
+    height: 100%;
 }
-
-.btnAll, .btnActive, .btnComplete {
-    font-size: 0.95rem;
-    cursor: pointer;
-    padding: 15px;
-    margin-bottom: 15px;
-    margin-right: 15px;
-    border-radius: 10px;
-    width: 100px;
+input[type=checkbox] {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 3px;
+    border: 1px solid #2E1760; /* midnight blue */
+    flex-shrink: 0;
+    margin-right: 1rem;
 }
-
-.counter {
-    font-size: 0.95rem;
-    padding: 15px;
-    margin-bottom: 15px;
+button {
+    border-radius: 3px;
+    height: 100%;
+    width: 5em;
+    background-color: #DFF3E4; /* Honeydew */
+    color: #2E1760; /* midnight blue */
+    flex-shrink: 0;
 }
-
-.checkbox-list, .title, .description {
-    margin-bottom: 15px;
+.remove {
+    font-weight: bold;
+    font-size: 2em;
+    color:#2E1760; /* midnight blue */
+    flex-shrink: 0;
 }
-
-.todo-filter {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-}
-
-.item {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 97%;
-    margin-bottom: 15px;
-}
-
-.item span {
-    flex-grow: 1;
-    font-size: 1.2rem;
-    margin: 0 15px;
-}
-
-.checkBox {
-    width: 30px;
-    height: 30px;
-    border: 3px solid #333;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.remove:hover {
+    color: #7180B9; /* Glaucous */
     cursor: pointer;
 }
-
-.deleteData {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #f00;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.strikeThrough {
+.completed label{
+    color: #7180B9; /* Glaucous */
     text-decoration: line-through;
-    color: red;
 }
-
-.text {
+main footer p {
+    margin: 0;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+}
+main > footer {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+}
+.bottom-tab {
+    border: 1px solid black;
+    border-radius: 5px;
     cursor: pointer;
 }
-
-.active {
-    background-color: #000;
-    color: #fff;
+.selected-tab {
+    background-color:white;
+    color: #2E1760; /* midnight blue */
+    cursor: default;
 }
-
-.inActive {    
-    background-color: transparent;
-    border: 2px solid #000;
+.footer-add {
+    margin: auto auto 1em auto;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 500px;
+    padding: .5em;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3423A6; /* Blue (Pantone) */
+    border-radius: 0 0 10px 10px;
+    border: 2px solid #DFF3E4; /* Honeydew */
+    border-top: 1px solid #DFF3E4; /* Honeydew */
+}
+.footer-add input {
+    height: 3em;
+    width: 80%;
+    border-radius: 3px;
+    border: 2px solid #7180B9; /* Glaucous */
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    padding: 0 .25em;
+}
+.error-input {
+    background-color: #DFF3E4; /* Honeydew */
+}
+.clearall {
+    margin-left: auto;
+    width: max-content;
 }
