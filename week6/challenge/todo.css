@@ -45,7 +45,6 @@ li {
     width: 100%;
     margin: 0;
     padding: .5em;
-    border-top: 1px solid #1013f5; 
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -80,15 +79,15 @@ button:hover {
 .remove {
     font-weight: bold;
     font-size: 2em;
-    color:#2E1760; 
+    color: salmon; 
     flex-shrink: 0;
 }
 .remove:hover {
-    color: #7180B9; 
+    color: teal; 
     cursor: pointer;
 }
 .completed label{
-    color: #7180B9; 
+    color: black; 
     text-decoration: line-through;
 }
 main footer p {
@@ -111,7 +110,7 @@ main > footer {
 }
 .selected-tab {
     background-color:white;
-    color: #2E1760; 
+    color: #c51ed4; 
     cursor: default;
 }
 .footer-add {
