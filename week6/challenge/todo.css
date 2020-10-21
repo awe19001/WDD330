@@ -95,14 +95,7 @@ button:hover {
     color: white; 
     text-decoration: line-through;
 }
-.bottom-tab{
-    color: rgb(75, 72, 72); 
-    text-decoration: line-through;
-}
-.bottom-tab:hover{
-    color: white; 
-    text-decoration: line-through;
-}
+
 main footer p {
     margin: 0;
     padding: .5em;
