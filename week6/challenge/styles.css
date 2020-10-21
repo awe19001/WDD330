@@ -25,7 +25,7 @@
   }
 
   /* Style the "Add" button */
-  .btnAddTodo {
+  span.btnAddTodo {
     padding: 10px;
     width: 25%;
     background: #d9d9d9;
@@ -38,7 +38,7 @@
     border-radius: 0;
   }
   
-  .btnAddTodo:hover {
+  span.btnAddTodo:hover {
     background-color: #bbb;
   }
 
