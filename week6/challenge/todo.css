@@ -123,10 +123,7 @@ main > footer {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #3423A6;
-    border-radius: 0 0 10px 10px;
-    border: 2px solid #DFF3E4; 
-    border-top: 1px solid #DFF3E4;
+    background-color: rgb(112, 49, 5);
 }
 .footer-add input {
     height: 3em;
