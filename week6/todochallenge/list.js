@@ -1,44 +1,32 @@
-// Add a new task. 
+
 let taskInput = document.getElementById("new-task");  
-  
-// first button 
 let addButton = document.getElementsByTagName("button")[0];  
-  
-// ul of #incomplete-tasks 
-let incompleteTaskHolder = document.getElementById("incomplete-tasks");  
-  
-// completed-tasks 
+let incompleteTaskHolder = document.getElementById("incomplete-tasks");
 let completedTasksHolder = document.getElementById("completed-tasks");  
    
-/*---- Part 1 ----*/
+/*1*/
 // function to create new task item 
 let createNewTaskElement = function (taskString) { 
    
     let listItem = document.createElement("li"); 
    
-    // input (checkbox) 
+ 
     let checkBox = document.createElement("input"); // checkbox 
-    // label 
     let label = document.createElement("label"); // label 
-    // input (text) 
     let editInput = document.createElement("input"); // text 
-    // button.edit 
     let editButton = document.createElement("button"); // edit button 
-   
-    // button.delete 
     let deleteButton = document.createElement("button"); // delete button 
    
     label.innerText = taskString; 
    
     // Each elements, needs appending 
     checkBox.type = "checkbox"; 
-    editInput.type = "text"; 
-   
+    editInput.type = "text";    
   
     // innerText encodes special characters, HTML does not. 
-    editButton.innerText = "Edit";      
+    editButton.innerText = "";      
     editButton.className = "edit"; 
-    deleteButton.innerText = "Delete"; 
+    deleteButton.innerText = "X"; 
     deleteButton.className = "delete"; 
    
     // and appending. 
@@ -49,7 +37,7 @@ let createNewTaskElement = function (taskString) {
     listItem.appendChild(deleteButton); 
     return listItem; 
 } 
-/*---- Part 2 ----*/
+/*2*/
 let addTask = function () { 
     console.log("Add Task..."); 
    
@@ -67,7 +55,7 @@ let addTask = function () {
    
 } 
    
-/*---- Part 3 ----*/
+/*3*/
 let editTask = function () { 
     console.log("Edit Task..."); 
     console.log("Change 'edit' to 'save'"); 
@@ -87,7 +75,7 @@ let editTask = function () {
     listItem.classList.toggle("editMode"); 
 } 
    
-/*---- Part 4 ----*/
+/*4*/
 let deleteTask = function () { 
     console.log("Delete Task..."); 
    
@@ -98,7 +86,7 @@ let deleteTask = function () {
    
 } 
    
-/*---- Part 5 ----*/
+/*5*/
    
 let taskCompleted = function () { 
     console.log("Complete Task..."); 
@@ -110,7 +98,7 @@ let taskCompleted = function () {
    
 } 
    
-/*---- Part 6 ----*/
+/*6*/
 let taskIncomplete = function () { 
     console.log("Incomplete Task..."); 
     // Mark task as incomplete. 
@@ -119,7 +107,7 @@ let taskIncomplete = function () {
     bindTaskEvents(listItem, taskCompleted); 
 } 
    
-/*---- Part 7 ----*/
+/*7*/
 addButton.onclick = addTask; 
 addButton.addEventListener("click", addTask); 
    
@@ -139,7 +127,7 @@ let bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
     checkBox.onchange = checkBoxEventHandler; 
 } 
    
-/*---- Part 8 ----*/
+/*8*/
 // cycle over incompleteTaskHolder ul list items 
 // for each list item 
 for (let i = 0; i < incompleteTaskHolder.children.length; i++) { 

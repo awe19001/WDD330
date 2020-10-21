@@ -1,7 +1,7 @@
 /* Basic Style */
 body { 
-    background: #ecf0f1; 
-    color: #333; 
+    color: #424444; 
+    background: rgb(233, 229, 229); 
     font-family: Lato, sans-serif; 
   } 
     
@@ -34,7 +34,7 @@ body {
   button { 
     background: none; 
     border: 0px; 
-    color: #888; 
+    color: rgb(22, 8, 8); 
     font-size: 15px; 
     width: 100px; 
     margin: 10px 0 0; 
@@ -49,7 +49,7 @@ body {
   /* Heading */
   h3, 
   label[for='new-task'] { 
-    color: #333; 
+    color: rgb(92, 75, 75); 
     font-weight: 700; 
     font-size: 15px; 
     border-bottom: 2px solid #333; 
@@ -64,7 +64,7 @@ body {
     line-height: 18px; 
     height: 18px; 
     padding: 10px; 
-    border: 1px solid #ddd; 
+    border: 1px solid rgb(134, 122, 122); 
     background: #fff; 
     border-radius: 6px; 
     font-family: Lato, sans-serif; 
@@ -89,8 +89,12 @@ body {
   input#new-task { 
     float: left; 
     width: 318px; 
+    margin-top: 50px;
   } 
-    
+  .addtak {
+    margin-top: 60px;
+  }
+  
   button:hover { 
     color: #0FC57C; 
   } 
@@ -99,7 +103,7 @@ body {
   li { 
     overflow: hidden; 
     padding: 20px 0; 
-    border-bottom: 1px solid #eee; 
+    border-bottom: 1px solid rgb(148, 143, 143); 
   } 
     
   li>input[type="checkbox"] { 
