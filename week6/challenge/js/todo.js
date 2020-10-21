@@ -42,6 +42,13 @@ btnCompleted.addEventListener('click', () => {
     btnActive.classList.remove('active');
     btnActive.classList.add('inActive');
 });
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
