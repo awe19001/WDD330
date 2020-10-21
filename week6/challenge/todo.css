@@ -84,7 +84,7 @@ button:hover {
     font-style: italic;
 }
 .remove:hover {
-    color: rgb(3, 247, 247); 
+    color:#92e211;
     cursor: pointer;
 }
 .completed label{
