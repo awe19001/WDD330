@@ -52,7 +52,7 @@ li {
     justify-content: space-between;
 }
 li:hover {
-    background-color: #095a1d;
+    background-color: rgb(75, 72, 72); 
 }
 label {
     width: 100%;
