@@ -88,7 +88,8 @@ button:hover {
     cursor: pointer;
 }
 .completed label{
-    color: rgb(75, 72, 72); 
+    color: white; 
+    background-color: rgb(75, 72, 72); 
     text-decoration: line-through;
 }
 .completed label:hover{
