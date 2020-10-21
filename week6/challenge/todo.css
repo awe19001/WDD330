@@ -87,8 +87,7 @@ button:hover {
     cursor: pointer;
 }
 .completed label{
-
-    background-color: rgb(75, 72, 72); 
+    color: rgb(75, 72, 72); 
     text-decoration: line-through;
 }
 main footer p {
