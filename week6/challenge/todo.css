@@ -95,11 +95,11 @@ button:hover {
     color: white; 
     text-decoration: line-through;
 }
-.active{
+.all label{
     color: rgb(75, 72, 72); 
     text-decoration: line-through;
 }
-.active:hover{
+.all label:hover{
     color: white; 
     text-decoration: line-through;
 }
