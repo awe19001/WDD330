@@ -1,21 +1,23 @@
- /*********************
-* Utility Functions  /
-**********************/
+export default class TodoTask {
+    constructor(id, content, status) {
+        this.id = id;
+        this.content = content;
+        this.status = status;
+    }
 
-export function qs(selector){
-    console.log(`QS initialized with ${selector}`);
-    const item = document.getElementById(selector);
-    return (item ? item : null);
-}
+    getId() {
+        return this.id;
+    }
 
-export function onTouch(elementSelector, callback){
-    console.log(`onTouch initialized`);
-    const listenItem = qs(elementSelector);
+    getContent() {
+        return this.content;
+    }
 
-    console.log(`listenItem is ${listenItem}`);
-    listenItem.addEventListener('touchend', function(event) {
-        event.preventDefault();
-        event.currentTarget.click();
-    }, false);
-    listenItem.addEventListener('click', () => {console.log(callback);}, false);
+    getStatus() {
+        return this.status;
+    }
+
+    setStatus(status) {
+        this.status = status;
+    }
 }
