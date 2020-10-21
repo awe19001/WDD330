@@ -36,22 +36,22 @@ ul {
     padding: 0;
     list-style-type: none;
     background-color: white;
-    border: 1px solid #2E1760;
+    border: 1px solid #da04bd;
     border-top: none;
-    color: #2E1760;
+    color: #811253;
 }
 li {
     width: 100%;
     margin: 0;
     padding: .5em;
-    border-top: 1px solid #2E1760; 
+    border-top: 1px solid #1013f5; 
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
 }
 li:hover {
-    background-color: #DFF3E4;
+    background-color: #095a1d;
 }
 label {
     width: 100%;
@@ -61,7 +61,7 @@ input[type=checkbox] {
     width: 2rem;
     height: 2rem;
     border-radius: 3px;
-    border: 1px solid #2E1760; 
+    border: 1px solid #92e211; 
     flex-shrink: 0;
     margin-right: 1rem;
 }
