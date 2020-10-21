@@ -38,7 +38,7 @@
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;    
-    border-bottom: #555;
+    border-bottom: rgb(173, 27, 27);
   }
   
   .btnAddTodo:hover {
