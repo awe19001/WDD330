@@ -1,7 +1,4 @@
 
-/************************
-* Main Class and Methods / 
-*************************/
 let toDoList = null; 
 
 export default class ToDos {
@@ -9,16 +6,12 @@ export default class ToDos {
         this.parentElement = document.getElementById(elementID);
         this.LSkey = this.parentElement.id;
     }
-    //add an item to the list
-    addToDo(){
-        //grab the user's input
+      addToDo(){       
         const taskContent = document.getElementById('new_task');
-        //send to create the new item
-        saveToDo(this.LSkey, taskContent);
-        //refresh the list
+        saveToDo(this.LSkey, taskContent);     
         this.showToDoList();
     }
-    //show the list in the parent function
+  
     showToDoList(){
         console.log('showToDoList invoked');
         getToDos(this.LSkey);
@@ -32,7 +25,7 @@ export default class ToDos {
         console.log(listItems);
         if(listItems.length > 0 && listItems[0].children[0]){
         listItems.forEach(item => {
-            //checkboxes
+           
             item.children[0].addEventListener('click', event => {
                 this.completeToDo(event.currentTarget.id);
             })
