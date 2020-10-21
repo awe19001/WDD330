@@ -109,8 +109,8 @@ main > footer {
     cursor: pointer;
 }
 .selected-tab {
-    background-color:white;
-    background-color: #c51ed4; 
+    color:white;
+    background-color: #a439ad; 
     cursor: default;
 }
 .footer-add {
