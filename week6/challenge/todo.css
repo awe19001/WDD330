@@ -83,7 +83,7 @@ button:hover {
     flex-shrink: 0;
 }
 .remove:hover {
-    color: teal; 
+    color: rgb(3, 247, 247); 
     cursor: pointer;
 }
 .completed label{
