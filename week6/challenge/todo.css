@@ -21,6 +21,7 @@ body {
     color: rgb(16, 36, 214);
     font-weight: bold;
     font-style: italic;
+    font-size: 20px;
 }
 main {
     flex: 1 0 auto;
