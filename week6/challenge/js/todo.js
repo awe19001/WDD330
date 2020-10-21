@@ -57,7 +57,7 @@ export default class todo {
     }
     addTabListeners() {
         //filter tabs
-        const listTabs = Array.from(document.querySelectorAll('.ubos-tab'));
+        const listTabs = Array.from(document.querySelectorAll('.bottom-tab'));
         listTabs.forEach(tab => {
             tab.addEventListener('click', event => {
                 for (let item in listTabs){
