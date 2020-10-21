@@ -108,7 +108,7 @@ main > footer {
     align-items: center;
     padding: .5em;
 }
-.bottom-tab {
+.ubos-tab {
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
