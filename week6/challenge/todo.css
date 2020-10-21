@@ -14,7 +14,8 @@ body {
     padding: 0 .3em;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to right,rgb(13, 240, 183),rgb(5, 132, 182));
+    background-image: url("balance.jpg");
+    background-repeat: no-repeat;
 }
 main {
     flex: 1 0 auto;
