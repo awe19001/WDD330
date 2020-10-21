@@ -14,7 +14,7 @@ body {
     padding: 0 .3em;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    background-image: linear-gradient(to right,rgb(13, 240, 183),rgb(5, 132, 182));
 }
 main {
     flex: 1 0 auto;
