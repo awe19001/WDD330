@@ -39,9 +39,7 @@ ul {
     padding: 0;
     list-style-type: none;
     background-color: white;
-    border: 1px solid #da04bd;
-    border-top: none;
-    color: #811253;
+    color: rgb(75, 72, 72); 
 }
 li {
     width: 100%;
