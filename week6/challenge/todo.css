@@ -17,6 +17,11 @@ body {
     background-image: url("balance.jpg");
     background-repeat: no-repeat;
 }
+.redText {
+    color: rgb(16, 36, 214);
+    font-weight: bold;
+    font-style: italic;
+}
 main {
     flex: 1 0 auto;
     width: 100%;
