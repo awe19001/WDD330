@@ -28,11 +28,11 @@
   .btnAddTodo {
     padding: 5px;
     width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    background: #555;
+    color: black;
     float: left;
     text-align: center;
-    font-size: 10px;
+    font-size: 8px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
