@@ -36,22 +36,22 @@ ul {
     padding: 0;
     list-style-type: none;
     background-color: white;
-    border: 1px solid #2E1760; /* midnight blue */
+    border: 1px solid #2E1760;
     border-top: none;
-    color: #2E1760; /* midnight blue */
+    color: #2E1760;
 }
 li {
     width: 100%;
     margin: 0;
     padding: .5em;
-    border-top: 1px solid #2E1760; /* midnight blue */
+    border-top: 1px solid #2E1760; 
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
 }
 li:hover {
-    background-color: #DFF3E4; /* Honeydew */
+    background-color: #DFF3E4;
 }
 label {
     width: 100%;
@@ -61,7 +61,7 @@ input[type=checkbox] {
     width: 2rem;
     height: 2rem;
     border-radius: 3px;
-    border: 1px solid #2E1760; /* midnight blue */
+    border: 1px solid #2E1760; 
     flex-shrink: 0;
     margin-right: 1rem;
 }
@@ -69,22 +69,22 @@ button {
     border-radius: 3px;
     height: 100%;
     width: 5em;
-    background-color: #DFF3E4; /* Honeydew */
-    color: #2E1760; /* midnight blue */
+    background-color: #DFF3E4; 
+    color: #2E1760;
     flex-shrink: 0;
 }
 .remove {
     font-weight: bold;
     font-size: 2em;
-    color:#2E1760; /* midnight blue */
+    color:#2E1760; 
     flex-shrink: 0;
 }
 .remove:hover {
-    color: #7180B9; /* Glaucous */
+    color: #7180B9; 
     cursor: pointer;
 }
 .completed label{
-    color: #7180B9; /* Glaucous */
+    color: #7180B9; 
     text-decoration: line-through;
 }
 main footer p {
@@ -107,7 +107,7 @@ main > footer {
 }
 .selected-tab {
     background-color:white;
-    color: #2E1760; /* midnight blue */
+    color: #2E1760; 
     cursor: default;
 }
 .footer-add {
@@ -120,22 +120,22 @@ main > footer {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #3423A6; /* Blue (Pantone) */
+    background-color: #3423A6;
     border-radius: 0 0 10px 10px;
-    border: 2px solid #DFF3E4; /* Honeydew */
-    border-top: 1px solid #DFF3E4; /* Honeydew */
+    border: 2px solid #DFF3E4; 
+    border-top: 1px solid #DFF3E4;
 }
 .footer-add input {
     height: 3em;
     width: 80%;
     border-radius: 3px;
-    border: 2px solid #7180B9; /* Glaucous */
+    border: 2px solid #7180B9; 
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     padding: 0 .25em;
 }
 .error-input {
-    background-color: #DFF3E4; /* Honeydew */
+    background-color: #DFF3E4; 
 }
 .clearall {
     margin-left: auto;
