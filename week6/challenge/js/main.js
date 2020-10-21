@@ -1,5 +1,5 @@
 // Code to keep in Main JS
-import ToDos from './ToDos.js';
+import ToDos from './todo.js';
 const myToDoList = new ToDos('todo');
 window.addEventListener('load', () => {
   myToDoList.showToDoList();

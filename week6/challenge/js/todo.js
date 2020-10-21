@@ -1,7 +1,7 @@
 
 let toDoList = null; 
 
-export default class ToDos {
+export default class todo {
     constructor(elementID) {
         this.parentElement = document.getElementById(elementID);
         this.LSkey = this.parentElement.id;
