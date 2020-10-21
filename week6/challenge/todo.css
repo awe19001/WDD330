@@ -14,22 +14,25 @@ body {
     padding: 0 .3em;
     display: flex;
     flex-direction: column;
-    background-color: #14ecf3;
+    background-color: teal;
 }
 main {
     flex: 1 0 auto;
     width: 100%;
     max-width: 500px;
     margin: 1em auto 0 auto;
-    background-color: #0d649e; 
-    border-radius: 10px 10px 0 0;
-    border: 2px solid #2a8b43;
-    border-bottom: none;
+    background-color: salmon; 
     padding:.5em;
-    color: #0dc73b; 
+    color: rgb(75, 72, 72); 
 }
 h1 {
     text-align: center;
+    font-size: 60px;
+}
+h2 {
+   text-align: center;
+   font-size: 15px;
+   margin-top: -30px;
 }
 ul {
     margin: 0;
