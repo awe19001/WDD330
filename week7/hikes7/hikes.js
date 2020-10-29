@@ -1,5 +1,5 @@
 // Example of using Classes and modules to organize the code needed to render our list of hikes. Not using MVC here.
-
+import Comments from './comments.js';
 //create an array of hikes
 const hikeList = [
     {
@@ -36,6 +36,10 @@ const hikeList = [
     }
   ];
   
+
+
+
+
   const imgBasePath = '//byui-cit.github.io/cit261/examples/';
   
   export default class Hikes {
@@ -113,6 +117,10 @@ const hikeList = [
           <div>
               <h3>Difficulty</h3>
               <p>${hike.difficulty}</p>
+          </div>
+          <div>
+            <textarea></textarea>
+            <button type="submit">Submit </button>
           </div>
   </div>`;
   

@@ -6,10 +6,12 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 startButton.addEventListener('click', startGame)
+
 nextButton.addEventListener('click', () => {
 
   currentQuestionIndex++
   setNextQuestion()
+
 })
 
 function startGame() {
@@ -83,9 +85,11 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
+
 const questions = [
   {
     question: 'What is 2 + 2?',
+    Construction :"images/image.jpg",
     answers: [
       { text: '4', correct: true },
       { text: '22', correct: false }
@@ -94,6 +98,7 @@ const questions = [
   {
 
     question: 'Who is the best YouTuber?',
+  
     answers: [
       { text: 'Web Dev Simplified', correct: true },
       { text: 'Traversy Media', correct: true },
@@ -104,6 +109,7 @@ const questions = [
 
   {
     question: 'Is web development fun?',
+
     answers: [
       { text: 'Kinda', correct: false },
       { text: 'YES!!!', correct: true },
@@ -114,6 +120,7 @@ const questions = [
 
   {
     question: 'What is 4 * 2?',
+
     answers: [
       { text: '6', correct: false },
       { text: '8', correct: true }
