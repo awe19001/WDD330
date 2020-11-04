@@ -1,5 +1,6 @@
 import Comments from './comments.js';
 const hikeComments = new Comments('hikeComments');
+
 //create an array of hikes
 const hikeList = [
   {
@@ -67,6 +68,7 @@ export default class Hikes {
     this.parentElement.innerHTML = '';
     this.backButton.classList.remove('hidden');
     this.parentElement.appendChild(renderOneHikeFull(hike));
+    hikeComments.showCommentList(hike.name);
   }
   // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
   addHikeListener() {
@@ -93,25 +95,26 @@ function renderHikeList(parent, hikesList) {
   hikesList.forEach(hike => {
     parent.appendChild(renderOneHikeLight(hike));
   });
+  hikeComments.showCommentList();
 }
 
 function renderOneHikeLight(hike) {
-const item = document.createElement("li");
-item.classList.add('light');
-item.setAttribute('data-name', hike.name);
-item.innerHTML = ` <h2>${hike.name}</h2>
-<div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
-<div>
-        <div>
-            <h3>Distance</h3>
-            <p>${hike.distance}</p>
-        </div>
-        <div>
-            <h3>Difficulty</h3>
-            <p>${hike.difficulty}</p>
-        </div>
-</div>`;
-return item;
+  const item = document.createElement("li");
+  item.classList.add('light');
+  item.setAttribute('data-name', hike.name);
+  item.innerHTML = ` <h2>${hike.name}</h2>
+  <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
+  <div>
+          <div>
+              <h3>Distance</h3>
+              <p>${hike.distance}</p>
+          </div>
+          <div>
+              <h3>Difficulty</h3>
+              <p>${hike.difficulty}</p>
+          </div>
+  </div>`;
+  return item;
 }
 
 function renderOneHikeFull(hike) {
