@@ -48,14 +48,59 @@
             </div>
             <div class="lessons">
               <ul>
-                <li><h5>JavaScript: Novice to Ninja, 2nd Edition ( Ch11: Further Functions)</h5>
-                       <p>Functions are first-class objects in Jacascript. They can be passed around in the same way as every other value. </p>    
+                <li><h5>HTML5 and CSS3 for the Real world  (Ch8: Transforms and Transitions)</h5>
+                       <p>We can manipulate an element’s appearance using transform functions. Translation functions allow you to move elements left, right, up, or down.   </p>
+                       <p>The translate(x,y) function moves an element x from the left, and y from the top:
+                        transform: translate(45px, -45px);  </p>
+                       <p>The scale(x,y) function scales an elementbythe defined factors horizontallythen
+                        vertically. If only one value is provided, it will be used for both the x and y values,
+                        growingor shrinkingyour elementor pseudo-element while maintaining theoriginal
+                        aspect ratio. transform: scale(1.5, 0.25); </p>
+                       <p>A scaled element will grow outwards from or shrink inwards towards its center; in
+                        other words, the element’s center will stay in the same place as its dimensions
+                        change. </p>    
+                       <p>The rotate() function rotates an element around the point of origin by a specified
+                        angle value.</p>
+                       <p>The skew(x,y) function specifies a skew along the x and y axes. </p>
+                       <p>The transition-property property defines the CSS properties of the element that
+                        should be transitioned, with all for all properties being the default.</p>
+                       <p>The transition-duration property sets how long the transition will take: the
+                        duration of time it takes to go from the default state to the transitioned state. </p>
+                       <p>The transition-timing-function lets you control the pace of the transition in
+                        even more granular detail.</p>
+                       <p>CSS animations, unlike transitions, allow you to
+                        control each step of an animation via keyframes.</p>
+                       <p>A keyframe is a snapshot
+                        that defines a starting or end point of any smooth transition.</p>
+                       <p>@keyframes moveRight {
+                        from {
+                        transform: translateX(-50%);
+                        }
+                        to {
+                        transform: translateX(50%);
+                        }
+                       }
+                       @keyframes appearDisappear {
+                        0%, 100% {
+                        opacity: 0;
+                        }
+                       CSS3 Transforms and Transitions 203
+                        20%, 80% {
+                        opacity: 1;
+                        }
+                       }
+                       @keyframes bgMove {
+                        100% {
+                        background-position: 120% 0;
+                        }
+                       } </p>
+                       <p> </p>
                        
 
                        <li><a href="https://awe19001.github.io/WDD330/week7/ninja7/ninja7.html">Quiz Ninja Project</a> - follow the link</li>
                 </li>
 
-                <li><h5>JavaScript: Novice to Ninja, 2nd Edition ( Ch13: AJAX)</h5>
+                <li><h5>HTML5 and CSS3 for the Real world ( Ch12: Canvas, SVG, and Drag and Drop)</h5>
                  
                   <p>The blob() method is used to read a file of raw data, such as an image or a
                     spreadsheet. </p>       
