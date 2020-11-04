@@ -71,7 +71,7 @@ body {
     background: #330748;
     cursor: pointer;
 }
-.toggle:active {
+.toggle.active {
     background: pink;
 }
 .toggle:before {
@@ -85,7 +85,7 @@ body {
     font-size: 24px;
     color: #fff; 
 }
-.toggle:active:before {
+.toggle.active:before {
     content: '\f00d';
 }
 @media (max-width: 767px) {
