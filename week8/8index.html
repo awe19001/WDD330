@@ -109,14 +109,32 @@
 
                 <li><h5>HTML5 and CSS3 for the Real world ( Ch12: Canvas, SVG, and Drag and Drop)</h5>
                  
-                  <p></p>     
-                  <p></p>  
-                  <p></p>  
-                  <p></p>  
-                  <p></p>  
-                  <p></p>  
-                  <p></p>    
-                  <p></p>  
+                  <p>The first step to using canvas is to add a canvas element to the page:
+                    <canvas>
+                     Sorry! Your browser doesn’t support Canvas.
+                    </canvas></p>     
+                  <p>To draw a rectangle with a red border,
+                    we first define the stroke color:
+                    var canvas = document.getElementById("myCanvas");
+                    var context = canvas.getContext("2d");
+                    context.strokeStyle = "red";
+                    context.fillStyle = "blue";
+                  </p>  
+                  <p>An arc is a segment of a circle, but as there’s no
+                    method for creating a circle, we can draw a 360° arc.</p>  
+                  <p>A major downside of canvas in its current form is its lack of accessibility. The canvas
+                    doesn’t create a DOM node, is not a text-based format, and is thus essentially invisible to tools such as screen readers. </p>  
+                  <p> SVG stands for Scalable Vector Graphics, a specific file
+                    format that allows you to describe vector graphics using XML.</p>  
+                  <p>. A major selling point
+                    of vector graphics in general is that, unlike bitmap images (such as GIF, JPEG, PNG,
+                    and TIFF), vector images preserve their quality even as you blow them up or shrink
+                    them down</p>  
+                  <p>If you need to paint pixels to the screen and have no concerns about
+                    the ability to retrieve and modify your shapes, canvas is probably the better choice</p>    
+                  <p>If you need to be able to access and change specific aspects of
+                    your graphics, SVG might be more appropriate</p>  
+                 
                         
 
            </li>
@@ -125,7 +143,7 @@
                       <h3>Questions:</h3>
                       <ol>
                         <li>
-                          <p>What are disadvantage of Ajax? </p>
+                          <p> Which is best to use Canvas or SVG? </p>
                         
                         </li>
                       </ol>                                                                
