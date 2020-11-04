@@ -1,4 +1,5 @@
 import Comments from './comments.js';
+const hikeComments = new Comments('hikeComments');
 
 // Example of using Classes and modules to organize the code needed to render our list of hikes. Not using MVC here.
 
