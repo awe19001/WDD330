@@ -51,9 +51,9 @@ a.skywalker {
     text-decoration: none;
 }
 
-    a.skywalker:hover {
-        color: #cacbc8;
-    }
+a.skywalker:hover {
+    color: #cacbc8;
+}
 
 #output {
     padding: .5em 1em 2em;
