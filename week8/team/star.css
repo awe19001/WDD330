@@ -1,4 +1,4 @@
-img.starwars {
+img.skywalker {
     width: 100%;
     display: block;
     position: relative;
@@ -17,14 +17,14 @@ img.starwars {
     text-align: center;
 }
 
-h1.starwars {
+h1.skywalker {
     background-image: url("starname.png");
     background-repeat: no-repeat;
     margin-left: 500px;
     height: 200px;
 }
 
-h2.starwars {
+h2.skywalker {
     font-size: 2.25em;
 }
 
@@ -43,7 +43,7 @@ h2.starwars {
     padding: 1em;
 }
 
-a.starwars {
+a.skywalker {
     color: #979792;
     transition: .3s;
     font-family: "Times New Roman", Times, serif;
@@ -51,7 +51,7 @@ a.starwars {
     text-decoration: none;
 }
 
-    a.starwars:hover {
+    a.skywalker:hover {
         color: #cacbc8;
     }
 
@@ -116,7 +116,7 @@ button.close {
     }  
 }
 @media only screen and (max-width: 700px) {
-    h1.starwars {
+    h1.skywalker {
         background-image: url("starname.png");
         background-repeat: no-repeat;
         margin-left: 150px;
