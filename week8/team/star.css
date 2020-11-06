@@ -12,11 +12,10 @@ img.skywalker {
     margin: 0;
     color: #fff;
 }
-.list {
+.listbox {
     text-align: center;
     margin: 1em;
-    margin-left: 500px;
-    font-size: 20px;
+    color: white;
 }
 
 .header {
@@ -61,7 +60,35 @@ a.skywalker:hover {
     color: #cacbc8;
 }
 
+button.close {
+    background-color: yellow;
+    border-radius: 5px;
+    margin-top: 2em;
+    position: fixed;
+    top: .25em;
+    right: .25em;
+}
 
+@media only screen and (max-width: 600px) {
+
+    button.close {
+        position: fixed;
+        top: .25em;
+        right: .25em;
+        margin: 0;
+    }
+   
+}
+
+@media only screen and (min-width: 601px) {
+ 
+    button.close {
+        position: fixed;
+        top: .5em;
+        right: .5em;
+        margin: 0;
+    }  
+}
 @media only screen and (max-width: 700px) {
     h1.skywalker {
         background-image: url("starname.png");
@@ -74,4 +101,5 @@ a.skywalker:hover {
         font-size: 15px;
     }
 }
+ 
  
