@@ -12,10 +12,11 @@ img.skywalker {
     margin: 0;
     color: #fff;
 }
-.listbox {
+.list {
     text-align: center;
     margin: 1em;
-    color: white;
+    margin-left: 500px;
+    font-size: 20px;
 }
 
 .header {
