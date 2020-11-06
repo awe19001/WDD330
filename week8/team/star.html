@@ -8,22 +8,35 @@
     <link rel="icon" type="image/png" href="favicon.png" />    
     <link rel="stylesheet"  type="text/css" href="star.css">   
     <script src="star.js"></script>                     
-    <title>Star Wars</title>          
+    <title>SWAPI Exercise</title>          
 </head>
 
     <body>              
         <section class="mainsection">
             <div class="header">
                 <h1 class="skywalker"></h1> 
-                <h2 class="skywalker">THE RISE OF SKYWALKER</h2>
+                <h2 class="skywalker">SWAPI Exercise</h2>
             </div>
             <section class="main">
-                <div id="output"></div>
-                <div id="bottom">
-                    <a class="skywalker" href="#" id="previous">&laquo; Previous</a>
-                    <img class="skywalker" src="starship.png" alt="Star Wars Ship" />
-                    <a class="skywalker" href="#" id="next">Next &raquo;</a>
-                </div>
+
+                <div class="listbox">
+                    <table id="planetList" class=list>
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Climate</th>
+                          <th>Population</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <div id="bottom">
+                        <a class="skywalker" href="#" id="previous">&laquo; Previous</a>
+                        <img class="skywalker" src="starship.png" alt="Star Wars Ship" />
+                        <a class="skywalker" href="#" id="next">Next &raquo;</a>
+                    </div>
+                </div>             
+       
 
             </section>
         </section>

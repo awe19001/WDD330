@@ -5,63 +5,10 @@
     <meta charset="utf-8" />
     <title>SWAPI Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat');
-​
-        body {
-        font-family: Montserrat, sans-serif;
-        }
-        main {
-        display: flex;
-        flex-flow: column wrap;
-        }
-​
-        .hidden {
-        display: none;
-        }
-​
-        #shiplist td {
-        cursor: pointer;
-        }
-​
-        #detailsbox {
-        flex: 1 0 15em;
-        padding: 1em;
-        text-align: center;
-        border: 2px solid;
-        }
-​
-        #detailsbox dl {
-        border: 1px solid;
-        text-align: left;
-        }
-​
-        #shiplist {
-        /* display: flex; */
-        flex-flow: row wrap;
-        list-style-type: none;
-        }
-​
-        #shiplist thead {
-        background-color: lightgray;
-        }
-​
-        #shiplist tr {
-        border: 1px solid;
-        padding: 0.5em;
-        height: 44px;
-        }
-        #shiplist tr:nth-child(even) {
-        background-color: azure;
-        }
-        #shiplist tr:hover {
-        background-color: bisque;
-        text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet"  type="text/css" href="ryan.css">   
   </head>
 ​
-  <body>
+<body>
     <h1>
       <a href="https://swapi.dev/" target="_blank" rel="noreferrer">SWAPI</a>
       Exercise
@@ -76,26 +23,11 @@
               <th>Population</th>
             </tr>
           </thead>
-​
           <tbody></tbody>
         </table>
-​
         <a id="previous" href="#">&lt;-Previous</a> 
         <a id="next" href="#">Next -&gt;</a>
-     
-    </div>
-      <div id="detailsbox" class="hidden">
-        <dl>
-          <dt>Name:</dt>
-          <dd class="name"></dd>
-          <dt>Climate:</dt>
-          <dd class="climate"></dd>
-          <dt>Population:</dt>
-          <dd class="population"></dd>
-          <dt>*Movies:</dt>
-          <dd class="movies"></dd>
-        </dl>
-      </div>
+
     </main>
 ​
 <script src="ryan.js"></script>   
