@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Transitions and Transforms</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Press Start 2P|Ruthie|Anaheim' rel='stylesheet'>
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="ct" id="t1">
+	  <div class="ct" id="t2">
+		<div class="ct" id="t3">
+		  <div class="ct" id="t4">
+			 <div class="ct" id="t5">
+				<div class="ct" id="t6">
+			  <ul id="menu">
+				<a href="#t1"><li class="icon fas fa-door-open" id="icon_pg1"></li></a>
+				<a href="#t2"><li class="icon far fa-images" id="icon_pg2"></li></a>
+				<a href="#t3"><li class="icon fas fa-braille" id="icon_pg3"></li></a>
+				<a href="#t4"><li class="icon fa far fa-power-off" id="icon_pg4"></li></a>
+				<a href="#t5"><li class="icon far fa-file" id="icon_pg5"></li></a>
+				<a href="#t6" id="door_closed"><li class="icon far fas fa-door-closed" id="icon_pg6"></li></a>
+			  </ul>
+			  <div class="page" id="p1">
+				 <section class="logo">
+					<div class="circle">
+						<h1 class="siteTitle"><span class="welcome">Welcome</span><br/>
+						to CSS<br/>Transitions<br/>
+						<i class="welcome fas fa-smile-beam"></i></h1>
+					</div>
+				 </section>  
+			  </div>
+			  <div class="page" id="p2"> <!--gallery-->
+				<section class="icon far fa-images">
+					<span class="title">Photo Gallery 1</span>
+					<span class="hint">On hover, images move to top, rotate, grow and transition from grayscale to color</span>				
+					<div id="gallery">
+						<div id="img1">
+							<img src="img/photo_Dresden.jpg">
+							<span>Good-boy, Dresden</span>
+						</div>	
+						<div id="img2">
+							<img src="img/photo_lyra.jpg">
+							<span>Lyra the skinnyface</span>
+						</div>	
+						<div id="img3">
+							<img src="img/photo_fizzgig.jpg">
+							<span>Fizzgig helping pack</span>
+						</div>	
+						<div id="img4">
+							<img src="img/photo_tika.jpg">
+							<span>Our Tika-girl</span>
+						</div>	
+						<div id="img5">
+							<img src="img/photo_kira2.jpg">
+							<span>Our Floofy Princess, Kira</span>
+						</div>	
+						<div id="img6">
+							<img src="img/photo_thor.jpg">
+							<span>The Mighty Thor!</span>
+						</div>	
+					</div>
+					
+				
+				
+				
+				</section>
+			  </div>  
+			  <div class="page" id="p3">
+				<div class="container">
+					<section>
+						<h1 class="title">Button Styles Gallery</h1>
+						<div class="rotateLeft">{Hover}</div>
+						<p>
+							<button class="btn btn1 btn1a">Button</button>
+							<button class="btn btn1 btn1b">Button</button>
+							<button class="btn btn1 btn1c">Button</button>
+							<button class="btn btn1 btn1d">Button</button>
+						</p>
+						<p>
+							<button class="btn btn1 btn1e">Button</button>
+							<button class="btn btn1 btn1f">Button</button>
+							<button class="btn btn2 btn2c icon-arrow-right">Continue</button>
+							<button class="btn btn2 btn2d icon-arrow-left">Return</button>
+						</p>
+						<p>
+							<button class="btn btn3 btn3a icon-arrow-right">Send data</button>
+							<button class="btn btn4 btn4a icon-cart"><span>Add to cart</span></button>
+							<button class="btn btn4 btn4b icon-remove"><span>Delete</span></button>
+							<button class="btn btn4 btn4b icon-cog"><span>Settings</span></button>
+						</p>
+						<hr/>
+						<div class="rotateLeft">{Click}</div>
+						<p>
+							<button class="btn btn5 btn5a btnValidate icon-truck">Order item</button>
+							<button class="btn btn5 btn5b btnValidate icon-envelope">Send message</button>
+							<button class="btn btn5 btn5h icon-envelope btnValidate success">Email form</button>
+							<button class="btn btn5 btn5h icon-envelope btnValidate error">Email form</button>							
+						</p>
+						<p>
+							<button class="btn btn5 btn5c btnValidate btnicon-only icon-arrow-right">Submit</button>
+							<button class="btn btn5 btn5d btnValidate btnicon-only icon-remove">Empty</button>
+							<button class="btn btn5 btn5e btnValidate btnicon-only icon-heart">Like</button>
+							<button class="btn btn5 btn5f btnValidate btnicon-only icon-star">Fav</button>
+							<button class="btn btn5 btn5g btnValidate btnicon-only icon-gift">Gift</button>
+						</p>
+						<p class="perspective">
+							<button class="btn btn6 btn6g btnValidate success">3D Button</button>
+						</p>
+						<p class="perspective">
+							<button class="btn btn6 btn6g btnValidate error">3D Button</button>
+						</p>
+					</section>
+				</div><!-- /container -->
+				
+				
+				</section>
+			  </div>
+			  <div class="page" id="p4">
+				<section class="icon">
+				  <span class="title titlePad"><i class="fas fa-power-off"></i> Dials & On/Off Switches</span>
+
+					<div class="container-dial">
+
+						<!-- OUTER SHADOW -->
+						<div class="de">
+
+							<!-- TEXT -->
+							<div class="den">
+
+								<!-- LINE -->
+								<hr class="line">
+								<hr class="line">
+								<hr class="line">
+								<hr class="line">
+								<hr class="line">
+
+								<!-- DIAL -->
+								<div class="switch">
+
+									<!-- TEXT -->
+									<label for="switch_off"><span>OFF</span></label>
+									<label for="switch_1"><span>1</span></label>
+									<label for="switch_2"><span>2</span></label>
+									<label for="switch_3"><span>3</span></label>
+									<label for="switch_4"><span>4</span></label>
+									<label for="switch_5"><span>5</span></label>
+									<label for="switch_6"><span>6</span></label>
+									<label for="switch_7"><span>7</span></label>
+									<label for="switch_8"><span>8</span></label>
+									<label for="switch_9"><span>9</span></label>
+
+									<!-- INPUT -->
+									<input id="switch_off" name="switch" checked type="radio">
+									<input id="switch_1" name="switch" type="radio">
+									<input id="switch_2" name="switch" type="radio">
+									<input id="switch_3" name="switch" type="radio">
+									<input id="switch_4" name="switch" type="radio">
+									<input id="switch_5" name="switch" type="radio">
+									<input id="switch_6" name="switch" type="radio">
+									<input id="switch_7" name="switch" type="radio">
+									<input id="switch_8" name="switch" type="radio">
+									<input id="switch_9" name="switch" type="radio">
+
+									<!-- LIGHT -->
+									<div class="light"><span></span></div>
+
+									<!-- DOT -->
+									<div class="dot"><span></span></div>
+
+									<!-- CENTER -->
+									<div class="dene">
+										<div class="denem">
+											<div class="deneme">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dialSelMsg">Your selection:<span id="dialSelValue"></span></div>
+						<!--end knob-->
+					</div>
+					<div>
+						<!-- start on/off switches-->
+						<div class="column-center">
+							<div class="on_off example2">
+								<input type="checkbox">
+								<label><i></i></label>
+							</div>	
+						</div>
+					  <div class="column-left">
+						<div class="on_off example1">
+							<input type="checkbox">
+							<label></label>
+						</div>  
+					  </div>
+					  <div class="column-right">
+						<div class="on_off example3">
+							<input type="checkbox">
+							<label><i class="fas fa-power-off"></i></label>
+						</div>  
+					  </div>
+					</div>
+
+
+				</section>
+			  </div> 
+			  <div class="page" id="p5">
+				<section class="icon">
+				  <span class="title titlePad25">Card Flip Example</span>
+					<div class="wrapper_card">
+					  <div class="cols">
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container_card">
+										<div class="front card1">
+											<div class="inner">
+												<p>Serenity</p>
+												<span>Firefly-class vessel</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+											  <p>Ship like this, be with you till the day you die.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container_card">
+										<div class="front card2">
+											<div class="inner">
+												<p>River</p>
+												<span>the weapon</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>Also, I can kill you with my brain.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container_card">
+										<div class="front card4">
+											<div class="inner">
+												<p>Mal</p>
+												<span>the captain</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>And I’m thinking you weren’t burdened with an overabundance of schooling. So why don’t we just ignore each other ’til we go away.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container_card">
+										<div class="front card3">
+											<div class="inner">
+												<p>Kaylee</p>
+												<span>the mechanic</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>Everything's shiny, Captain! Not to fret.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container_card">
+										<div class="front card5">
+											<div class="inner">
+												<p>Wash</p>
+												<span>the pilot</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>Curse your sudden but inevitable betrayal!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container_card">
+										<div class="front card6">
+											<div class="inner">
+												<p>Jayne</p>
+												<span>public relations</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>Let's go be bad guys!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container_card">
+										<div class="front card7">
+											<div class="inner">
+												<p>Inara</p>
+												<span>the companion</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>And what exactly was our net profit on the famous wobbly-headed doll caper?</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container_card">
+										<div class="front card8">
+											<div class="inner">
+												<p>Zoe</p>
+												<span>first mate</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>Sir, I think you have a problem with your brain being missing.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					 </div>
+				</section>
+			  </div> 
+			  
+			  <div class="page" id="p6">
+				<section class="icon container_end">
+					  <h1 class="end_title">
+						<span id="h1_title1" class="end_span  h1_title">Thank you</span>
+						<span id="h1_title2" class="end_span">for reviewing</span>
+						<span id="h1_title3" class="end_span">my page!</span>
+					  </h1>
+					  <!-- then bring in "Stay shiny!"-->
+					  <img src="img/stay_shiny.png" height="348" width="343" class="ping"/>
+
+				</section>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+<script>
+
+window.addEventListener('DOMContentLoaded', (event) => {
+	//preload OFF selection (default) until another selection is made
+    document.getElementById('switch_off').click();
+});
+
+var validateButtons = document.getElementsByClassName('btnValidate');
+
+for(var i = 0; i < validateButtons.length; i++) {
+	validateButtons[i].addEventListener("click", activateValidation, false);
+}
+
+function activateValidation() {
+	var self = this,
+		activatedClass = 'btnactivated';
+		
+	if(this.classList.contains('btn5')){
+		if(this.classList.contains('success')) {
+			activatedClass = 'btnsuccess';
+		}
+		if(this.classList.contains('error')) {
+			activatedClass = 'btnerror';
+		}
+	}
+	else {
+		//btn6: 3d
+		activatedClass = (this.classList.contains('success')) ? 'btnsuccess3d' : 'btnerror3d';	
+	}
+
+	//set timeout
+	if(!this.classList.contains(activatedClass)) {
+		this.classList.add(activatedClass);
+		setTimeout( function() {
+			self.classList.remove(activatedClass);
+		}, 1000 );
+	}
+}
+
+//add event listener to dial control
+var inputElem = document.getElementsByName('switch');
+for(var i = 0; i < inputElem.length; i++) {
+
+    inputElem[i].addEventListener('click', function(){
+		var channel = this.id.substr(7);
+		document.getElementById('dialSelValue').innerHTML = channel;
+		switch(channel) {
+			case 'off':
+			document.getElementById('dialSelValue').classList.remove('on');
+				document.getElementById('dialSelValue').classList.add('off');
+				break;
+			default:
+				document.getElementById('dialSelValue').classList.add('on');
+				document.getElementById('dialSelValue').classList.remove('off');
+		}
+        //console.log(channel);
+    }, false);
+}
+</script>
+</body>
+</html>

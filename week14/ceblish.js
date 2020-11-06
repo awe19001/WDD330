@@ -88,42 +88,42 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
-    Construction :"images/image.jpg",
+    question: 'Unsa ni sa English?',
+
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'cup', correct: true },
+      { text: 'cop', correct: false }
     ]
   },
   {
 
-    question: 'Who is the best YouTuber?',
+    question: 'Unsa ni sa English?',
   
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'bear', correct: true },
+      { text: 'beer', correct: false },
+      { text: 'bare', correct: false },
+      { text: 'beer', correct: false }
     ]
   },
 
   {
-    question: 'Is web development fun?',
+    question: 'Unsa ni sa English?',
 
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'monk', correct: false },
+      { text: 'monkey', correct: true },
+      { text: 'mankey', correct: false },
+      { text: 'munkey', correct: false }
     ]
   },
 
   {
-    question: 'What is 4 * 2?',
+    question: 'Unsa ni sa English?',
 
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'ship', correct: false },
+      { text: 'sheep', correct: true }
     ]
   }
 ]

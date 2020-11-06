@@ -88,6 +88,19 @@ body {
 .toggle.active:before {
     content: '\f00d';
 }
+
+.content{
+    width: (100% - 250px);
+    margin-top: 60px;
+    padding: 20px;
+    margin-left: 250px;
+    background: url(background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  
 @media (max-width: 767px) {
     .navigation {
         left: -60px;
@@ -96,4 +109,15 @@ body {
         left: 0px;
         width: 100%;
     }
+}
+@media screen and (max-width: 780px){
+    .content{
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 20px;
+        transition: 0s;
+      }
+
+
+
 }
