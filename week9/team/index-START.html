@@ -59,7 +59,7 @@
 
   <script>
 ​
-  function playSound(event){
+function playSound(event){
     const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
 ​
@@ -86,6 +86,7 @@
 ​
   window.addEventListener('keydown', playSound);
   window.addEventListener('keyup', removePlaying);
+​
 ​
 
     </script>
