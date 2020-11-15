@@ -1,3 +1,4 @@
+//select all
 const start = document.getElementById("start");
 
 const quiz = document.getElementById("quiz");
@@ -16,9 +17,9 @@ const choiceC = document.getElementById("C");
 
 const progress = document.getElementById("progress");
 
-const scoreContainer = document.getElementById("scoreContainer");
+const scoreDiv = document.getElementById("score");
 
-
+//create questions
 let questions = [
     {
         question: "What does HTML stand for?",
@@ -38,12 +39,18 @@ let questions = [
     },
 ];
 
-let lastQuestionIndex = questions.length - 1;
+//create variables
+const lastQuestionIndex = questions.length - 1;
 let runningQuestionIndex = 0;
+const questionTime = 10;
+const gaugeWidth = 150;
+let count = 0;
+const gaugeUnit = guageWidth/questionTime;
 
+//render question
 function renderQuestion() {
-    let q = questions[runningQuestionIndex];
-    qImg.innerHTML = "img src=" + q.imgSrc + ">";
+    let q = questions[runningQuestion];
+    qImg.innerHTML = "<img src=" + q.imgSrc + ">";
     question.innerHTML = "<p>" + q.question + "</p>";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
@@ -51,30 +58,20 @@ function renderQuestion() {
 
 }
 
-runningQuestionIndex = 0;
-renderQuestion()
+start.style.display = "none";
+renderQuestion();
+quiz.style.display = "block";
+renderProgress();
+renderCounter();
 
-runningQuestionIndex++
-renderQuestion()
-
+//render progress
 function progressRender() {
     for(let qIndex = 0; qIndex <= lastQuestionIndex; qIndex++) {
-        progress.innerHTML += "<div class='prog' id=" +      + "></div>";
-
+        progress.innerHTML += "<div class='prog' id=" + qIndex +"></div>";
     
     }
 }
-function answerIsCorrect() {
-    document.getElementById(runningQuestionIndex).style.backgroundColor = "green"
-}
-function answerIsWrong() {
-    document.getElementById(runningQuestionIndex).style.backgroundColor = "red"
-}
-
-const questionTime = 10;
-const gaugeWidth = 150;
-let count = 0;
-const gaugeProgressUnit = guageWidth/questionTime;
+//counter render
 
 function counterRender(){
     if(count <= questionTime) {
@@ -92,6 +89,24 @@ function counterRender(){
             scoreRender();
         }
     }
+
+runningQuestionIndex = 0;
+renderQuestion()
+
+runningQuestionIndex++
+renderQuestion()
+
+
+function answerIsCorrect() {
+    document.getElementById(runningQuestionIndex).style.backgroundColor = "green"
+}
+function answerIsWrong() {
+    document.getElementById(runningQuestionIndex).style.backgroundColor = "red"
+}
+
+
+
+
 
 function checkAnswer(answer) {
     if(questions[runningQuestionIndex].correct == answer ){
