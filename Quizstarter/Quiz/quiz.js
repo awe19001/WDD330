@@ -152,3 +152,4 @@ function scoreRender(){
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
+
