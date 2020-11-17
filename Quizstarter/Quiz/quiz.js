@@ -15,72 +15,70 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "What does HTML stand for?",
-        imgSrc : "img/html.png",
+        imgSrc : "img/bird.jpg",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         correct : "A"
     },{
         question : "What does CSS stand for?",
-        imgSrc : "img/css.png",
+        imgSrc : "img/bread.jpg",
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
         correct : "B"
     },{
         question : "What does JS stand for?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/cat.jpg",
         choiceA : "Wrong",
         choiceB : "Wrong",
         choiceC : "Correct",
         correct : "C"
-    }
-    {
+    },{
         question : "What does HTML stand for?",
-        imgSrc : "img/html.png",
+        imgSrc : "img/cup.jpg",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         correct : "A"
     },{
         question : "What does CSS stand for?",
-        imgSrc : "img/css.png",
+        imgSrc : "img/egg.jpg",
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
         correct : "B"
     },{
         question : "What does JS stand for?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/eye.jpg",
         choiceA : "Wrong",
         choiceB : "Wrong",
         choiceC : "Correct",
         correct : "C"
-    }
-    {
+    },{
         question : "What does HTML stand for?",
-        imgSrc : "img/html.png",
+        imgSrc : "img/frog.jpg",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         correct : "A"
     },{
         question : "What does CSS stand for?",
-        imgSrc : "img/css.png",
+        imgSrc : "img/lightning.jpg",
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
         correct : "B"
     },{
         question : "What does JS stand for?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/lips.jpg",
         choiceA : "Wrong",
         choiceB : "Wrong",
         choiceC : "Correct",
         correct : "C"
     },{
         question : "What does JS stand for?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/rainbow.jpg",
         choiceA : "Wrong",
         choiceB : "Wrong",
         choiceC : "Correct",
