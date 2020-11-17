@@ -16,72 +16,72 @@ let questions = [
     {
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/bird.jpg",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
-        correct : "A"
+        choiceA : "Bard",
+        choiceB : "Bird",
+        choiceC : "Bord",
+        correct : "B"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/bread.jpg",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
+        choiceA : "Breed",
+        choiceB : "Bread",
+        choiceC : "Brade",
         correct : "B"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/cat.jpg",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
+        choiceA : "Cut",
+        choiceB : "Kat",
+        choiceC : "Cat",
         correct : "C"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/cup.jpg",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
+        choiceA : "Cup",
+        choiceB : "Cop",
+        choiceC : "Coop",
         correct : "A"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/egg.jpg",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
+        choiceA : "Eg",
+        choiceB : "Egg",
+        choiceC : "igg",
         correct : "B"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/eye.jpg",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
+        choiceA : "Ice",
+        choiceB : "Aye",
+        choiceC : "Eye",
         correct : "C"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/frog.jpg",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
+        choiceA : "Frog",
+        choiceB : "Frag",
+        choiceC : "Frug",
         correct : "A"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/lightning.jpg",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
+        choiceA : "Laytning",
+        choiceB : "Lightning",
+        choiceC : "Ligning",
         correct : "B"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/lips.jpg",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
+        choiceA : "Kips",
+        choiceB : "Nips",
+        choiceC : "Lips",
         correct : "C"
     },{
         question : "CEBUANO TO ENGLISH",
         imgSrc : "img/rainbow.jpg",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
+        choiceA : "Renbow",
+        choiceB : "Rainbuw",
+        choiceC : "Rainbow",
         correct : "C"
     }
 ];
