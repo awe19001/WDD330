@@ -1,0 +1,65 @@
+body {
+    background-color: #206cdf;
+}
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 500px;
+    background-color: #dfd38f;
+    color: #814040;
+}
+
+h1 {
+    text-align: center;
+    color: #d81111;
+    font-family: 'Piedra', cursive;
+    font-size: 40px;
+}
+
+.quakelist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #3a41a1;
+}
+
+.quakelist > li:nth-child(n){
+    background-color:#126bfa; 
+}
+.quakelist > li:nth-child(2n){
+    background-color: #f0cf17;
+}
+.quakelist > li {
+    padding: .5em 1em;
+}
+fieldset {
+    display:flex;
+    flex-flow: row wrap;
+    border: none;
+    margin: 0;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+fieldset p {
+    margin: .5em 0;
+    padding: 0 .5em;
+}
+fieldset p:last-child{
+    width: 100%;
+    text-align: center;
+}
+button {
+    background-color: #1253e0;
+    color: #eceaea;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+}
+.hidden {
+    display:none;
+}
+.title {
+    font-weight: bold;
+}
