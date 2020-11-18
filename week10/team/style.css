@@ -8,6 +8,7 @@ main {
     height: 500px;
     background-color: #dfd38f;
     color: #814040;
+    background: url(earth.jpg) bottom center;
 }
 
 h1 {
