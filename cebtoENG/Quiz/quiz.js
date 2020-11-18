@@ -83,6 +83,48 @@ let questions = [
         choiceB : "Rainbuw",
         choiceC : "Rainbow",
         correct : "C"
+    },{
+        question : "CEBUANO TO ENGLISH",
+        imgSrc : "img/lightning.jpg",
+        choiceA : "Laytning",
+        choiceB : "Lightning",
+        choiceC : "Ligning",
+        correct : "B"
+    },{
+        question : "CEBUANO TO ENGLISH",
+        imgSrc : "img/lips.jpg",
+        choiceA : "Kips",
+        choiceB : "Nips",
+        choiceC : "Lips",
+        correct : "C"
+    },{
+        question : "CEBUANO TO ENGLISH",
+        imgSrc : "img/rainbow.jpg",
+        choiceA : "Renbow",
+        choiceB : "Rainbuw",
+        choiceC : "Rainbow",
+        correct : "C"
+    },{
+        question : "CEBUANO TO ENGLISH",
+        imgSrc : "img/lightning.jpg",
+        choiceA : "Laytning",
+        choiceB : "Lightning",
+        choiceC : "Ligning",
+        correct : "B"
+    },{
+        question : "CEBUANO TO ENGLISH",
+        imgSrc : "img/lips.jpg",
+        choiceA : "Kips",
+        choiceB : "Nips",
+        choiceC : "Lips",
+        correct : "C"
+    },{
+        question : "CEBUANO TO ENGLISH",
+        imgSrc : "img/rainbow.jpg",
+        choiceA : "Renbow",
+        choiceB : "Rainbuw",
+        choiceC : "Rainbow",
+        correct : "C"
     }
 ];
 
@@ -175,7 +217,7 @@ function checkAnswer(answer){
 
 // answer is correct
 function answerIsCorrect(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+    document.getElementById(runningQuestion).style.backgroundColor = "blue";
 }
 
 // answer is Wrong

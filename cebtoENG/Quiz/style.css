@@ -1,3 +1,22 @@
+.welcome_form input,
+.welcome_form button {
+  display: block;
+  width: 100%;
+}
+
+.welcome_form input {
+  background-color: transparent;
+  color: rgb(93, 77, 238);
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid rgb(51, 54, 226);
+  margin-bottom: 15px;
+}
+
+.welcome_form input:focus {
+  outline: none;
+}
 #start{
     font-weight: bolder;
     word-break: break-all;

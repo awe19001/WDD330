@@ -10,13 +10,17 @@
     
     <div id="container">
         <div id="start" class="neon">
+            <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+                <input type="text" name="name">
+            </form>
             <a href="#">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Start Quiz
+               Let's Start Quiz
             </a>  
+          
         </div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
@@ -36,5 +40,15 @@
         <div id="scoreContainer" style="display: none"></div>
     </div>
     <script src="quiz.js"></script>
+    <script>
+   function submitForm(e) {
+    e.preventDefault();
+    let name = document.forms["welcome_form"]["name"].value;
+  
+    sessionStorage.setItem("name", name);
+  
+    location.href = "index.html";
+  }
+    </script>
 </body>
 </html>
