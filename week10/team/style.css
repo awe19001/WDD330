@@ -7,13 +7,14 @@ main {
     margin: 0 auto;
     height: 500px;
     background-color: #dfd38f;
-    color: #814040;
-    background: url(earth.jpg) bottom center;
+    color: #f5ecec;
+    font-size: large;
+    background: url(earth.jpg) center;
 }
 
 h1 {
     text-align: center;
-    color: #d81111;
+    color: #eaf0f7;
     font-family: 'Piedra', cursive;
     font-size: 40px;
 }
