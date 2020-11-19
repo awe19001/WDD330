@@ -1,10 +1,9 @@
-
-export function getJSON(url) {
+export function getJSON(url){
     return fetch(url)
-        .then(function(response) {
-            if (!response.ok) {
+        .then(response => {
+            if(!response.ok){
                 throw Error(response.statusText);
-            } else {
+            }else {
                 return response.json();
             }
         })
@@ -12,6 +11,7 @@ export function getJSON(url) {
             console.log(error);
         });
 }
+
 export const getLocation = function(options) {
     return new Promise(function(resolve, reject) {
         navigator.geolocation.getCurrentPosition(resolve, reject, options);
