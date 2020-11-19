@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joeverlyn Awe WDD330 Portal">                         
+    <title>Joeverlyn Awe WDD330 Portfolio</title>  
+    <link href="form.css" rel="stylesheet">        
+
+  </head>
+  
+  <main>
+    <h1>Form Validation Page</h1>
+        <form method="get" action="thanks.html">
+          
+            <fieldset>
+                <legend>Information</legend>
+                <label class="top">Full Name* <input type="text" size="20" name="fname" pattern="[A-Za-z\s]{5,}" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1234555555" required></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>        
+              
+               
+            <fieldset>
+                <legend><span>Additional Information or Comments</span></legend>  
+                <label class="top" for="additionalcomments">
+                    Please enter any additional information or comments below
+                    <textarea id="additionalcomments" name="comments"></textarea>
+                </label>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Submit" >
+    </form>
+        
+</main>      
+
+    <script src="form.js"></script>
+</html>
+  
