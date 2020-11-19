@@ -1,5 +1,5 @@
 
-function getJSON(url) {
+export function getJSON(url) {
     return fetch(url)
         .then(function(response) {
             if (!response.ok) {

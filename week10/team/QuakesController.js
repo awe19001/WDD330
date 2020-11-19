@@ -13,6 +13,13 @@ export default class QuakesController {
       lat: 0,
       lon: 0
     };
+
+    this.rad = 100;
+    this.start = null;
+    this.end = null;
+    this.btn = null;
+
+
     // this is how our controller will know about the model and view...we add them right into the class as members.
     this.quakes = new Quake();
     this.quakesView = new QuakesView();
@@ -20,8 +27,12 @@ export default class QuakesController {
   async init() {
     // use this as a place to grab the element identified by this.parent, do the initial call of this.initPos(), and display some quakes by calling this.getQuakesByRadius()
     this.parentElement = document.querySelector(this.parent);
+    this.rad = parseInt(document.getElementById('kmRadius').value);
+    this.start = this.formatDateString(new Date(document.getElementById('startDate').value + 'T00:00'));
+    this.end = this.formatDateString(new Date(document.getElementById('endDate').value + 'T00:00'));
+    this.btn = this.buildBackButton();
     await this.initPos();
-    this.getQuakesByRadius(100);
+    this.getQuakesByRadius(this.rad);
   }
   async initPos() {
     // if a position has not been set
@@ -29,8 +40,13 @@ export default class QuakesController {
       try {
         // try to get the position using getLocation()
         
+        const myLocation = await getLocation();
+        console.log(myLocation);
         // if we get the location back then set the latitude and longitude into this.position
-        
+        if(myLocation){
+            this.position.lat = myLocation.coords.latitude;
+            this.position.lon = myLocation.coords.longitude;
+        }        
       } catch (error) {
         console.log(error);
       }
@@ -55,6 +71,9 @@ export default class QuakesController {
   }
   async getQuakeDetails(quakeId) {
     // get the details for the quakeId provided from the model, then send them to the view to be displayed
-   
+    const quake = this.quakes.getQuakeById(quakeId);
+    console.log(quakeId);
+    this.quakesView.renderQuake(quake, this.parentElement);
+    this.btn.classList.remove('hidden');
   }
 }
