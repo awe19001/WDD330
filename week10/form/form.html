@@ -17,7 +17,6 @@
             <fieldset>
                 <legend>Information</legend>
                 <label class="top">Full Name* <input type="text" size="20" name="fname" pattern="[A-Za-z\s]{5,}" required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="1234555555" required></label>
                 <label class="top">Zip Code* <input type="number" name="zip" required></label>
             </fieldset>        
@@ -63,6 +62,10 @@
                   <option>Lemon</option>
                   <option>Orange</option>
                 </datalist>
+              </p>
+              <p>
+                <label for="mail">I would like you to provide me with an e-mail address:</label>
+                <input type="email" id="mail" name="mail">
               </p>
          
              <input class="submitBtn" type="submit" value="Submit" >
