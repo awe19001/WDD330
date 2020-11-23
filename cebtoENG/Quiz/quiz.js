@@ -217,12 +217,12 @@ function checkAnswer(answer){
 
 // answer is correct
 function answerIsCorrect(){
-    document.getElementById(runningQuestion).style.backgroundColor = "blue";
+    document.getElementById(runningQuestion).style.backgroundColor = "yellow";
 }
 
 // answer is Wrong
 function answerIsWrong(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+    document.getElementById(runningQuestion).style.backgroundColor = "rgb(248, 10, 177)";
 }
 
 // score render

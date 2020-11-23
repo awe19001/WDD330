@@ -1,22 +1,4 @@
-.welcome_form input,
-.welcome_form button {
-  display: block;
-  width: 100%;
-}
 
-.welcome_form input {
-  background-color: transparent;
-  color: rgb(93, 77, 238);
-  font-size: 30px;
-  text-align: center;
-  border: none;
-  border-bottom: 1px solid rgb(51, 54, 226);
-  margin-bottom: 15px;
-}
-
-.welcome_form input:focus {
-  outline: none;
-}
 #start{
     font-weight: bolder;
     word-break: break-all;
@@ -108,7 +90,7 @@ body{
 
 #container{
     margin : 20px auto;
-    background-color: white;
+    background-color: rgb(11, 50, 179);
     height: 600px;
     width : 700px;
     border-radius: 5px;
@@ -148,22 +130,24 @@ body{
     width : 480px;
     position: absolute;
     right :0;
-    top : 470px;
-    padding : 25px
+    top : 460px;
+    padding : 25px;
 }
 .choice{
     display: inline-block;
     width : 135px;
     text-align: center;
-    border : 1px solid grey;
+    border : 1px solid rgb(243, 236, 236);
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
+    color: white;
 }
 .choice:hover{
     border : 2px solid grey;
     font-weight: bold;
-    background-color: rgb(166, 255, 0);
+    background-color: rgb(251, 255, 0);
+    color: blue;
 }
 
 #timer{
@@ -194,8 +178,8 @@ body{
     width : 500px;
     position: absolute;
     bottom : 0px;
-    right : 0px;
-    padding:5px;
+    right : 5px;
+    padding-right:30px;
     text-align: right;
 }
 .prog{
