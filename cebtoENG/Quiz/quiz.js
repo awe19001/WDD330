@@ -240,6 +240,7 @@ function scoreRender(){
               "img/1.png";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
+  
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
