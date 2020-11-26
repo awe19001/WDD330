@@ -15,16 +15,15 @@ main {
 h1 {
     text-align: center;
     color: #eaf0f7;
-    font-family: 'Piedra', cursive;
+    font-family: cursive;
     font-size: 40px;
 }
 h2 {
     text-align: center;
     color: #eaf0f7;
-    font-family: 'Piedra', cursive;
+    font-family: cursive;
     font-size: 40px;
 }
-
 .quakelist {
     list-style-type: none;
     margin: 0;
