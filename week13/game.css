@@ -38,12 +38,19 @@
     height : 300px;
     border-top-left-radius: 5px;
 }
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
 /*hud*/
 #hud {
   display: flex;
   justify-content: space-between;
 }
-#hud-prefix {
+.hud-prefix {
   text-align: center;
   font-size: 2rem;
 }
