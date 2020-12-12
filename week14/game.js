@@ -20,39 +20,87 @@ let questions = [
         choice1 : "Eg",
         choice2 : "Egg",
         choice3 : "igg",
+        choice4 : "age",
+        answer: 2,
+    },{
+            
+        imgSrc : "img/lightning.jpg",
+        choice1 : "Laytning",
+        choice2 : "Lightning",
+        choice3 : "Ligning",
         choice4: "alert('Hello World');",
         answer: 2,
     },{
             
-            imgSrc : "img/lightning.jpg",
-            choice1 : "Laytning",
-            choice2 : "Lightning",
-            choice3 : "Ligning",
-            choice4: "alert('Hello World');",
-            answer: 2,
-        },{
-            
-            imgSrc : "img/lips.jpg",
-            choice1 : "Kips",
-            choice2 : "Nips",
-            choice3 : "Lips",
-            choice4: "alert('Hello World');",
-            answer: 3,
-        },{
+        imgSrc : "img/lips.jpg",
+        choice1 : "Kips",
+        choice2 : "Nips",
+        choice3 : "Lips",
+        choice4 : "Rips;",
+        answer: 3,
+    },{
           
-            imgSrc : "img/rainbow.jpg",
-            choice1 : "Renbow",
-            choice2 : "Rainbuw",
-            choice3 : "Rainbow",
-            choice4: "alert('Hello World');",
-            answer: 3,
-        }
+        imgSrc : "img/rainbow.jpg",
+        choice1 : "Renbow",
+        choice2 : "Rainbuw",
+        choice3 : "Rainbow",
+        choice4 : "Ranbow",
+        answer: 3,
+    },{
+            
+        imgSrc : "img/bird.jpg",
+        choice1 : "Beard",
+        choice2 : "Bird",
+        choice3 : "Berd",
+        choice4 : "Bard",
+        answer: 2,
+    },{ 
+            
+        imgSrc : "img/bread.jpg",
+        choice1 : "Bread",
+        choice2 : "Brade",
+        choice3 : "Bride",
+        choice4 : "Breed",
+        answer: 1,
+    },{ 
+            
+        imgSrc : "img/cat.jpg",
+        choice1 : "Kat",
+        choice2 : "Cit",
+        choice3 : "Cot",
+        choice4 : "Cat",
+        answer: 4,
+    },{ 
+            
+        imgSrc : "img/cup.jpg",
+        choice1 : "Cup",
+        choice2 : "Cope",
+        choice3 : "Cop",
+        choice4 : "Cap",
+        answer: 1,
+    },{ 
+            
+        imgSrc : "img/eye.jpg",
+        choice1 : "Eya",
+        choice2 : "Aye",
+        choice3 : "Eye",
+        choice4 : "Iye",
+        answer: 3,
+    },{ 
+            
+        imgSrc : "img/frog.jpg",
+        choice1 : "Frag",
+        choice2 : "Froug",
+        choice3 : "Frog",
+        choice4 : "Froug",
+        answer: 3,
+    }
     ];
     
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 10;
 
 startGame = () => {
     questionCounter = 0;
