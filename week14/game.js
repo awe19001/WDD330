@@ -1,6 +1,5 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-const qImg = document.getElementById("qImg");
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
@@ -14,8 +13,8 @@ let availableQuesions = [];
 
 let questions = [];
 
-fetch('questions.json')     
-
+fetch('question.json')
+    
     .then((res) => {
         return res.json();
     })

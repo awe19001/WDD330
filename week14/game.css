@@ -32,9 +32,21 @@
 .incorrect {
   background-color: #dc3545;
 }
+/*added*/
+#qImg{
+  width : 600px;
+  height : 300px;
+  position: absolute;
+  left : 150px;
+  top : 50px;
+}
+#qImg img{
+  width : 500px;
+  height : 300px;
+  border-top-left-radius: 5px;
+}
 
 /* HUD */
-
 #hud {
   display: flex;
   justify-content: space-between;
