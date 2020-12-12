@@ -1,6 +1,7 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const qImg = document.getElementById("qImg");
+const questionCounterText = document.getElementById('questionCounter');
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
@@ -12,43 +13,46 @@ let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 
-let questions = [];
-
-fetch('questions.json')
+let questions = [
+    {    
+     
+        imgSrc : "img/egg.jpg",
+        choice1 : "Eg",
+        choice2 : "Egg",
+        choice3 : "igg",
+        choice4: "alert('Hello World');",
+        answer: 2,
+    },{
+            
+            imgSrc : "img/lightning.jpg",
+            choice1 : "Laytning",
+            choice2 : "Lightning",
+            choice3 : "Ligning",
+            choice4: "alert('Hello World');",
+            answer: 2,
+        },{
+            
+            imgSrc : "img/lips.jpg",
+            choice1 : "Kips",
+            choice2 : "Nips",
+            choice3 : "Lips",
+            choice4: "alert('Hello World');",
+            answer: 3,
+        },{
+          
+            imgSrc : "img/rainbow.jpg",
+            choice1 : "Renbow",
+            choice2 : "Rainbuw",
+            choice3 : "Rainbow",
+            choice4: "alert('Hello World');",
+            answer: 3,
+        }
+    ];
     
-    .then((res) => {
-        return res.json();
-    })
-    .then((loadedQuestions) => {
-        questions = loadedQuestions.results.map((loadedQuestion) => {
-            const formattedQuestion = {
-                question: loadedQuestion.question,
-            };
-
-            const answerChoices = [...loadedQuestion.incorrect_answers];
-            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-            answerChoices.splice(
-                formattedQuestion.answer - 1,
-                0,
-                loadedQuestion.correct_answer
-            );
-
-            answerChoices.forEach((choice, index) => {
-                formattedQuestion['choice' + (index + 1)] = choice;
-            });
-
-            return formattedQuestion;
-        });
-
-        startGame();
-    })
-    .catch((err) => {
-        console.error(err);
-    });
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 3;
 
 startGame = () => {
     questionCounter = 0;
@@ -112,3 +116,4 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
 };
+startGame();
