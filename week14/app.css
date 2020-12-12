@@ -29,12 +29,6 @@ h1 > span {
   font-weight: 500;
 }
 
-h2 {
-  font-size: 4.2rem;
-  margin-bottom: 4rem;
-  font-weight: 700;
-}
-
 h3 {
   font-size: 2.8rem;
   font-weight: 500;
@@ -188,4 +182,100 @@ input {
 
 input::placeholder {
   color: #aaa;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3.4rem;
+    color: white;
+    margin-bottom: 5rem;
+  }
+  body {
+    background-color: rgb(221, 10, 221);
+  }
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-top: 9.5rem;
+    margin-left: 5rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3.4rem;
+    color: white;
+    margin-bottom: 5rem;
+  }
+  body {
+    background-color: rgb(221, 10, 98);
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 14rem;
+    margin-left: 5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 5rem;
+  }
+  body {
+    background-color: rgb(126, 10, 221);
+  }
+  h2 {
+    color:rgb(139, 144, 145);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 13rem;
+    margin-left: 5rem;
+  }
+  .container {
+    padding: 5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 5rem;
+  }
+  body {
+    background-color: rgb(110, 63, 240);
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 13rem;
+    margin-left: 20rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 5rem;
+  }
+  body {
+    background-color: rgb(1, 130, 235);
+  }
+  h2 {
+    color:rgb(66, 71, 71);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 13rem;
+    margin-left: 15rem;
+  }
 }

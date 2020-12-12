@@ -32,19 +32,7 @@
 .incorrect {
   background-color: #dc3545;
 }
-/*added*/
-#qImg{
-  width : 600px;
-  height : 300px;
-  position: absolute;
-  left : 150px;
-  top : 50px;
-}
-#qImg img{
-  width : 500px;
-  height : 300px;
-  border-top-left-radius: 5px;
-}
+
 
 /* HUD */
 #hud {
@@ -65,7 +53,7 @@
   width: 20rem;
   height: 4rem;
   border: 0.3rem solid #56a5eb;
-  margin-top: 1.5rem;
+  margin-top: -4.5rem;
 }
 
 #progressBarFull {
@@ -91,4 +79,84 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #qImg{
+    width : 320px;
+    height : 200px;
+    position: absolute;
+    left : 105px;
+    top : 130px;
+}
+  #qImg img{
+    width : 320px;
+    height : 200px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #qImg{
+    width : 520px;
+    height : 300px;
+    position: absolute;
+    left : 120px;
+    top : 100px;
+  }
+  #qImg img{
+    width : 520px;
+    height : 300px;
+    border-top-left-radius: 5px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #qImg{
+    width : 520px;
+    height : 300px;
+    position: absolute;
+    left : 250px;
+    top : 90px;
+}
+#qImg img{
+    width : 520px;
+    height : 300px;
+    border-top-left-radius: 5px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #qImg{
+    width : 600px;
+    height : 300px;
+    position: absolute;
+    left : 310px;
+    top : 90px;
+}
+#qImg img{
+    width : 600px;
+    height : 300px;
+    border-top-left-radius: 5px;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #qImg{
+    width : 600px;
+    height : 300px;
+    position: absolute;
+    left : 450px;
+    top : 100px;
+}
+#qImg img{
+    width : 600px;
+    height : 300px;
+    border-top-left-radius: 5px;
+}
 }
