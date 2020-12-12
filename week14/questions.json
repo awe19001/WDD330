@@ -1,26 +1,82 @@
 [
     {
-      "question": "Inside which HTML element do we put the JavaScript??",
-      "choice1": "<script>",
-      "choice2": "<javascript>",
-      "choice3": "<js>",
-      "choice4": "<scripting>",
-      "answer": 1
+      "imgSrc": "img/egg.jpg",
+      "choice1": "eg",
+      "choice2": "egg",
+      "choice3": "igg",
+      "choice4": "ega",
+      "answer": 2
     },
     {
-      "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
-      "choice1": "<script href='xxx.js'>",
-      "choice2": "<script name='xxx.js'>",
-      "choice3": "<script src='xxx.js'>",
-      "choice4": "<script file='xxx.js'>",
+      "imgSrc": "img/lightning.jpg",
+      "choice1": "Laytning",
+      "choice2": "Lightning",
+      "choice3": "Ligning",
+      "choice4": "Litning;",
+      "answer": 2
+    },
+    {
+      "imgSrc": "img/lips.jpg",
+      "choice1": "Kips",
+      "choice2": "Nips",
+      "choice3": "Lips",
+      "choice4": "leps",
       "answer": 3
     },
     {
-      "question": " How do you write 'Hello World' in an alert box?",
-      "choice1": "msgBox('Hello World');",
-      "choice2": "alertBox('Hello World');",
-      "choice3": "msg('Hello World');",
-      "choice4": "alert('Hello World');",
-      "answer": 4
+      "imgSrc": "img/rainbow.jpg",
+      "choice1": "Renbow",
+      "choice2": "Rainbuw",
+      "choice3": "Rainbow",
+      "choice4": "Ranbow;",
+      "answer": 3
+    },
+    {
+      "imgSrc": "img/cup.jpg",
+      "choice1": "Cop",
+      "choice2": "Cape",
+      "choice3": "Cup",
+      "choice4": "Cope",
+      "answer": 3
+    },
+    {
+      "imgSrc": "img/frog.jpg",
+      "choice1": "Frog",
+      "choice2": "Flug",
+      "choice3": "Frag",
+      "choice4": "Frage",
+      "answer": 1
+    },
+    {
+      "imgSrc": "img/bird.jpg",
+      "choice1": "Vird",
+      "choice2": "Bird",
+      "choice3": "Beard",
+      "choice4": "Berd",
+      "answer": 2
+    },
+    {
+      "imgSrc": "img/bread.jpg",
+      "choice1": "Bread",
+      "choice2": "Brede",
+      "choice3": "Brade",
+      "choice4": "Bride",
+      "answer": 1
+    },
+    {
+      "imgSrc": "img/cat.jpg",
+      "choice1": "Cate",
+      "choice2": "Cat",
+      "choice3": "Kat",
+      "choice4": "Ket",
+      "answer": 2
+    },
+    {
+      "imgSrc": "img/eye.jpg",
+      "choice1": "Aye",
+      "choice2": "Ayy",
+      "choice3": "Eye",
+      "choice4": "Ice",
+      "answer": 3
     }
   ]
