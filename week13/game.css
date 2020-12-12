@@ -1,43 +1,30 @@
 .choice-container {
-    display: flex;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    font-size: 1.8rem;
-    border: 0.1rem solid rgb(86, 165, 235, 0.25);
-    background-color: white;    
-  }
-  
-  .choice-container:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-    background-color:  rgb(0, 132, 255);
-  }
-  
-  .choice-prefix {
-    padding: 1.5rem 2.5rem;
-    background-color: #56a5eb;
-    color: white;
-  }
-  
-  .choice-text {
-    padding: 1.5rem;
-    width: 100%;
-  }
-  /*added*/
-#qImg{
-    width : 600px;
-    height : 300px;
-    position: absolute;
-    left : 150px;
-    top : 50px;
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  background-color: white;
 }
-#qImg img{
-    width : 500px;
-    height : 300px;
-    border-top-left-radius: 5px;
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
 }
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #56a5eb;
+  color: white;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
 .correct {
   background-color: #28a745;
 }
@@ -45,18 +32,55 @@
 .incorrect {
   background-color: #dc3545;
 }
-/*hud*/
+
+
+/* HUD */
 #hud {
   display: flex;
   justify-content: space-between;
 }
+
 .hud-prefix {
   text-align: center;
   font-size: 2rem;
 }
+
 .hud-main-text {
   text-align: center;
 }
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: -4.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
+/* LOADER */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -65,7 +89,7 @@
     height : 200px;
     position: absolute;
     left : 105px;
-    top : 100px;
+    top : 130px;
 }
   #qImg img{
     width : 320px;
@@ -80,7 +104,7 @@
     height : 300px;
     position: absolute;
     left : 120px;
-    top : 50px;
+    top : 100px;
   }
   #qImg img{
     width : 520px;
@@ -92,14 +116,14 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #qImg{
-    width : 600px;
+    width : 520px;
     height : 300px;
     position: absolute;
     left : 250px;
-    top : 50px;
+    top : 90px;
 }
 #qImg img{
-    width : 500px;
+    width : 520px;
     height : 300px;
     border-top-left-radius: 5px;
 }
@@ -112,7 +136,7 @@
     height : 300px;
     position: absolute;
     left : 310px;
-    top : 50px;
+    top : 90px;
 }
 #qImg img{
     width : 600px;
@@ -127,11 +151,11 @@
     width : 600px;
     height : 300px;
     position: absolute;
-    left : 550px;
-    top : 50px;
+    left : 450px;
+    top : 100px;
 }
 #qImg img{
-    width : 500px;
+    width : 600px;
     height : 300px;
     border-top-left-radius: 5px;
 }
