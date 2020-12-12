@@ -13,7 +13,8 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-saveHighScore = (e) => {
+saveHighScore = e => {
+    console.log("clicked the save button!");
     e.preventDefault();
 
     const score = {
