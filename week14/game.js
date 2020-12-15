@@ -19,8 +19,8 @@ let questions = [
         imgSrc : "img/egg.jpg",
         choice1 : "Eg",
         choice2 : "Egg",
-        choice3 : "igg",
-        choice4 : "age",
+        choice3 : "Igg",
+        choice4 : "Age",
         answer: 2,
     },{
         question : "Unsa ni sa English?",    
@@ -94,13 +94,93 @@ let questions = [
         choice3 : "Frog",
         choice4 : "Froug",
         answer: 3,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/banana.jpg",
+        choice1 : "Banana",
+        choice2 : "Benene",
+        choice3 : "Banini",
+        choice4 : "Baneni",
+        answer: 1,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/beak.jpg",
+        choice1 : "Bake",
+        choice2 : "Beak",
+        choice3 : "Beik",
+        choice4 : "Beki",
+        answer: 2,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/bubble.jpg",
+        choice1 : "Bubble",
+        choice2 : "Bable",
+        choice3 : "Bobble",
+        choice4 : "Babol",
+        answer: 1,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/doll.jpg",
+        choice1 : "Dall",
+        choice2 : "Dull",
+        choice3 : "Doll",
+        choice4 : "Dell",
+        answer: 3,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/feet.jpg",
+        choice1 : "Fit",
+        choice2 : "Feet",
+        choice3 : "Fat",
+        choice4 : "Fiit",
+        answer: 2,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/horse.jpg",
+        choice1 : "Horse",
+        choice2 : "Hourse",
+        choice3 : "Hurse",
+        choice4 : "Hours",
+        answer: 1,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/pineapple.jpg",
+        choice1 : "Pineapple",
+        choice2 : "Paynaple",
+        choice3 : "Fineapple",
+        choice4 : "Penappale",
+        answer: 1,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/monkey.jpg",
+        choice1 : "Makey",
+        choice2 : "Monkey",
+        choice3 : "Mangkey",
+        choice4 : "Munkey",
+        answer: 2,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/shoes.jpg",
+        choice1 : "Shus",
+        choice2 : "Shoes",
+        choice3 : "Shoese",
+        choice4 : "Shuse",
+        answer: 2,
+    },{ 
+        question : "Unsa ni sa English?",    
+        imgSrc : "img/turtle.jpg",
+        choice1 : "Turtle",
+        choice2 : "Tortle",
+        choice3 : "Tutur",
+        choice4 : "Tortol",
+        answer: 1,
     }
     ];
     
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 20;
 
 startGame = () => {
     questionCounter = 0;
