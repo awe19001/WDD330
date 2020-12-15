@@ -15,7 +15,7 @@ let availableQuesions = [];
 
 let questions = [
     {    
-        question : "Unsa ni sa English?",
+        question : "",
         imgSrc : "img/egg.jpg",
         choice1 : "Eg",
         choice2 : "Egg",
@@ -23,7 +23,7 @@ let questions = [
         choice4 : "Age",
         answer: 2,
     },{
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/lightning.jpg",
         choice1 : "Laytning",
         choice2 : "Lightning",
@@ -31,7 +31,7 @@ let questions = [
         choice4 : "Liting",
         answer: 2,
     },{
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/lips.jpg",
         choice1 : "Kips",
         choice2 : "Nips",
@@ -39,7 +39,7 @@ let questions = [
         choice4 : "Rips;",
         answer: 3,
     },{
-        question : "Unsa ni sa English?",  
+        question : "",  
         imgSrc : "img/rainbow.jpg",
         choice1 : "Renbow",
         choice2 : "Rainbuw",
@@ -47,7 +47,7 @@ let questions = [
         choice4 : "Ranbow",
         answer: 3,
     },{
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/bird.jpg",
         choice1 : "Beard",
         choice2 : "Bird",
@@ -55,7 +55,7 @@ let questions = [
         choice4 : "Bard",
         answer: 2,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/bread.jpg",
         choice1 : "Bread",
         choice2 : "Brade",
@@ -63,7 +63,7 @@ let questions = [
         choice4 : "Breed",
         answer: 1,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/cat.jpg",
         choice1 : "Kat",
         choice2 : "Cit",
@@ -71,7 +71,7 @@ let questions = [
         choice4 : "Cat",
         answer: 4,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/cup.jpg",
         choice1 : "Cup",
         choice2 : "Cope",
@@ -79,7 +79,7 @@ let questions = [
         choice4 : "Cap",
         answer: 1,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/eye.jpg",
         choice1 : "Eya",
         choice2 : "Aye",
@@ -87,7 +87,7 @@ let questions = [
         choice4 : "Iye",
         answer: 3,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/frog.jpg",
         choice1 : "Frag",
         choice2 : "Froug",
@@ -95,7 +95,7 @@ let questions = [
         choice4 : "Froug",
         answer: 3,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/banana.jpg",
         choice1 : "Banana",
         choice2 : "Benene",
@@ -103,7 +103,7 @@ let questions = [
         choice4 : "Baneni",
         answer: 1,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/beak.jpg",
         choice1 : "Bake",
         choice2 : "Beak",
@@ -111,7 +111,7 @@ let questions = [
         choice4 : "Beki",
         answer: 2,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/bubble.jpg",
         choice1 : "Bubble",
         choice2 : "Bable",
@@ -119,7 +119,7 @@ let questions = [
         choice4 : "Babol",
         answer: 1,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/doll.jpg",
         choice1 : "Dall",
         choice2 : "Dull",
@@ -127,7 +127,7 @@ let questions = [
         choice4 : "Dell",
         answer: 3,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/feet.jpg",
         choice1 : "Fit",
         choice2 : "Feet",
@@ -135,7 +135,7 @@ let questions = [
         choice4 : "Fiit",
         answer: 2,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/horse.jpg",
         choice1 : "Horse",
         choice2 : "Hourse",
@@ -143,7 +143,7 @@ let questions = [
         choice4 : "Hours",
         answer: 1,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/pineapple.jpg",
         choice1 : "Pineapple",
         choice2 : "Paynaple",
@@ -151,7 +151,7 @@ let questions = [
         choice4 : "Penappale",
         answer: 1,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/monkey.jpg",
         choice1 : "Makey",
         choice2 : "Monkey",
@@ -159,7 +159,7 @@ let questions = [
         choice4 : "Munkey",
         answer: 2,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/shoes.jpg",
         choice1 : "Shus",
         choice2 : "Shoes",
@@ -167,7 +167,7 @@ let questions = [
         choice4 : "Shuse",
         answer: 2,
     },{ 
-        question : "Unsa ni sa English?",    
+        question : "",    
         imgSrc : "img/turtle.jpg",
         choice1 : "Turtle",
         choice2 : "Tortle",
