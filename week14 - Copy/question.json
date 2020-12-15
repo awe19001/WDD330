@@ -1,0 +1,29 @@
+[
+    {
+      "question": "Unsa ni sa English?",
+      "imgSrc" : "img/egg.jpg",
+      "choice1": "igg",
+      "choice2": "egg",
+      "choice3": "eig",
+      "choice4": "eeg",
+      "answer": 2
+    },
+    {
+      "question": "Unsa ni sa English?",
+      "imgSrc" : "img/lips.jpg",
+      "choice1": "Nips",
+      "choice2": "Hips",
+      "choice3": "Lips",
+      "choice4": "Kips",
+      "answer": 3
+    },
+    {
+      "question": "Unsa ni sa English?",
+      "imgSrc" : "img/rainbow.jpg",
+      "choice1": "Rainbuw",
+      "choice2": "Renbow",
+      "choice3": "Rinbuw",
+      "choice4": "Rainbow",
+      "answer": 4
+    }
+  ]
